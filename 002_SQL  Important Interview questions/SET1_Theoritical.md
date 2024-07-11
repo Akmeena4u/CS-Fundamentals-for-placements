@@ -195,78 +195,78 @@
 
 
  10. **What are some key commands and techniques used for the Manipulation of database data in SQL?** 
-   > **DATA MANIPULATION LANGUAGE (DML):**
-   > 
-   > 1. **INSERT:**
-   >    - Inserting values into a table.
-   >    ```
-   >    INSERT INTO table-name(col1, col2, col3) VALUES (v1, v2, v3), (val1, val2, val3);
-   >    ```
-   > 
-   > 2. **UPDATE:**
-   >    - Updating existing records in a table.
-   >    ```
-   >    UPDATE table-name SET col1 = 1, col2 = 'abc' WHERE id = 1;
-   >    ```
-   >    - Updating multiple rows:
-   >    ```
-   >    UPDATE student SET standard = standard + 1;
-   >    ```
-   > 
-   > 3. **ON UPDATE CASCADE:**
-   >    - Automatically updates foreign key values in related tables when primary key values are updated.
-   >    - Example:
-   >      ```
-   >      CREATE TABLE ORDER (
-   >          order_id INT PRIMARY KEY,
-   >          delivery_date DATE,
-   >          cust_id INT,
-   >          FOREIGN KEY (cust_id) REFERENCES customer(id) ON UPDATE CASCADE
-   >      );
-   >      ```
-   > 
-   > 4. **DELETE:**
-   >    - Deleting records from a table.
-   >    ```
-   >    DELETE FROM table-name WHERE id = 1;
-   >    ```
-   >    - Deleting all rows:
-   >    ```
-   >    DELETE FROM table-name;
-   >    ```
-   >    - **DELETE CASCADE:**
-   >      - Automatically deletes child entries in related tables when parent entries are deleted.
-   >      - Example:
-   >        ```
-   >        CREATE TABLE ORDER (
-   >            order_id INT PRIMARY KEY,
-   >            delivery_date DATE,
-   >            cust_id INT,
-   >            FOREIGN KEY (cust_id) REFERENCES customer(id) ON DELETE CASCADE
-   >        );
-   >        ```
-   >    - **ON DELETE SET NULL:**
-   >      - Sets foreign key values to NULL in related tables when parent entries are deleted.
-   >      - Example:
-   >        ```
-   >        CREATE TABLE ORDER (
-   >            order_id INT PRIMARY KEY,
-   >            delivery_date DATE,
-   >            cust_id INT,
-   >            FOREIGN KEY (cust_id) REFERENCES customer(id) ON DELETE SET NULL
-   >        );
-   >        ```
-   > 
-   > 5. **REPLACE:**
-   >    - Replaces existing rows or inserts new rows in a table.
-   >    - Example using REPLACE INTO:
-   >      ```
-   >      REPLACE INTO student (id, class) VALUES (4, 3);
-   >      ```
-   >    - Example using REPLACE INTO with SET:
-   >      ```
-   >      REPLACE INTO table SET col1 = val1, col2 = val2;
-   >      ```
+      > **DATA MANIPULATION LANGUAGE (DML):**
+      > 
+      > 1. **INSERT:**
+      >    - Inserting values into a table.
+      >    ```
+      >    INSERT INTO table-name(col1, col2, col3) VALUES (v1, v2, v3), (val1, val2, val3);
+      >    ```
+      > 
+      > 2. **UPDATE:**
+      >    - Updating existing records in a table.
+      >    ```
+      >    UPDATE table-name SET col1 = 1, col2 = 'abc' WHERE id = 1;
+      >    ```
+      >    - Updating multiple rows:
+      >    ```
+      >    UPDATE student SET standard = standard + 1;
+      >    ```
+      > 
+      > 3. **ON UPDATE CASCADE:**
+      >    - Automatically updates foreign key values in related tables when primary key values are updated.
+      >    - Example:
+      >      ```
+      >      CREATE TABLE ORDER (
+      >          order_id INT PRIMARY KEY,
+      >          delivery_date DATE,
+      >          cust_id INT,
+      >          FOREIGN KEY (cust_id) REFERENCES customer(id) ON UPDATE CASCADE
+      >      );
+      >      ```
+      > 
+      > 4. **DELETE:**
+      >    - Deleting records from a table.
+      >    ```
+      >    DELETE FROM table-name WHERE id = 1;
+      >    ```
+      >    - Deleting all rows:
+      >    ```
+      >    DELETE FROM table-name;
+      >    ```
+      >    - **DELETE CASCADE:**
+      >      - Automatically deletes child entries in related tables when parent entries are deleted.
+      >      - Example:
+      >        ```
+      >        CREATE TABLE ORDER (
+      >            order_id INT PRIMARY KEY,
+      >            delivery_date DATE,
+      >            cust_id INT,
+      >            FOREIGN KEY (cust_id) REFERENCES customer(id) ON DELETE CASCADE
+      >        );
+      >        ```
+      >    - **ON DELETE SET NULL:**
+      >      - Sets foreign key values to NULL in related tables when parent entries are deleted.
+      >      - Example:
+      >        ```
+      >        CREATE TABLE ORDER (
+      >            order_id INT PRIMARY KEY,
+      >            delivery_date DATE,
+      >            cust_id INT,
+      >            FOREIGN KEY (cust_id) REFERENCES customer(id) ON DELETE SET NULL
+      >        );
+      >        ```
+      > 
+      > 5. **REPLACE:**
+      >    - Replaces existing rows or inserts new rows in a table.
+      >    - Example using REPLACE INTO:
+      >      ```
+      >      REPLACE INTO student (id, class) VALUES (4, 3);
+      >      ```
+      >    - Example using REPLACE INTO with SET:
+      >      ```
+      >      REPLACE INTO table SET col1 = val1, col2 = val2;
+      >      ```
   
    
    
