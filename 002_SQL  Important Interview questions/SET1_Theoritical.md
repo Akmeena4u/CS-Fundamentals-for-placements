@@ -116,4 +116,102 @@
    >     3. HAVING requires GROUP BY.
    > 
 
+9. **What are some key commands and techniques used for defination database data in SQL?**
+> **CONSTRAINTS (DDL):**
+> 
+> 1. **Primary Key:**
+>    1. PK is not null, unique, and only one per table.
+> 
+> 2. **Foreign Key:**
+>    1. FK refers to PK of another table.
+>    2. Each relation can have any number of FKs.
+>    3. Example:
+>       ```
+>       CREATE TABLE ORDER (
+>           id INT PRIMARY KEY,
+>           delivery_date DATE,
+>           order_placed_date DATE,
+>           cust_id INT,
+>           FOREIGN KEY (cust_id) REFERENCES customer(id)
+>       );
+>       ```
+> 
+> 3. **UNIQUE:**
+>    1. Unique, can be null, and a table can have multiple unique attributes.
+>    2. Example:
+>       ```
+>       CREATE TABLE customer (
+>           ...
+>           email VARCHAR(1024) UNIQUE,
+>           ...
+>       );
+>       ```
+> 
+> 4. **CHECK:**
+>    1. Example:
+>       ```
+>       CREATE TABLE customer (
+>           ...
+>           CONSTRAINT age_check CHECK (age > 12),
+>           ...
+>       );
+>       ```
+> 
+> 5. **DEFAULT:**
+>    1. Set default value of the column.
+>    2. Example:
+>       ```
+>       CREATE TABLE account (
+>           ...
+>           saving_rate DOUBLE NOT NULL DEFAULT 4.25,
+>           ...
+>       );
+>       ```
+> 
+> 6. An attribute can be PK and FK both in a table.
+> 
+> 7. **ALTER OPERATIONS:**
+>    1. Changes schema.
+>    2. **ADD:**
+>       ```
+>       ALTER TABLE table_name ADD new_col_name datatype ADD new_col_name_2 datatype;
+>       ```
+>       Example:
+>       ```
+>       ALTER TABLE customer ADD age INT NOT NULL;
+>       ```
+>    3. **MODIFY:**
+>       ```
+>       ALTER TABLE table-name MODIFY col-name col-datatype;
+>       ```
+>       Example:
+>       ```
+>       ALTER TABLE customer MODIFY name CHAR(1024);
+>       ```
+>    4. **CHANGE COLUMN:**
+>       ```
+>       ALTER TABLE table-name CHANGE COLUMN old-col-name new-col-name new-col-datatype;
+>       ```
+>       Example:
+>       ```
+>       ALTER TABLE customer CHANGE COLUMN name customer_name VARCHAR(1024);
+>       ```
+>    5. **DROP COLUMN:**
+>       ```
+>       ALTER TABLE table-name DROP COLUMN col-name;
+>       ```
+>       Example:
+>       ```
+>       ALTER TABLE customer DROP COLUMN middle_name;
+>       ```
+>    6. **RENAME:**
+>       ```
+>       ALTER TABLE table-name RENAME TO new-table-name;
+>       ```
+>       Example:
+>       ```
+>       ALTER TABLE customer RENAME TO customer_details;
+>       ```
+> 
+
 
