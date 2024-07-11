@@ -116,102 +116,158 @@
    >     3. HAVING requires GROUP BY.
    > 
 
-9. **What are some key commands and techniques used for defination database data in SQL?**
-> **CONSTRAINTS (DDL):**
-> 
-> 1. **Primary Key:**
->    1. PK is not null, unique, and only one per table.
-> 
-> 2. **Foreign Key:**
->    1. FK refers to PK of another table.
->    2. Each relation can have any number of FKs.
->    3. Example:
->       ```
->       CREATE TABLE ORDER (
->           id INT PRIMARY KEY,
->           delivery_date DATE,
->           order_placed_date DATE,
->           cust_id INT,
->           FOREIGN KEY (cust_id) REFERENCES customer(id)
->       );
->       ```
-> 
-> 3. **UNIQUE:**
->    1. Unique, can be null, and a table can have multiple unique attributes.
->    2. Example:
->       ```
->       CREATE TABLE customer (
->           ...
->           email VARCHAR(1024) UNIQUE,
->           ...
->       );
->       ```
-> 
-> 4. **CHECK:**
->    1. Example:
->       ```
->       CREATE TABLE customer (
->           ...
->           CONSTRAINT age_check CHECK (age > 12),
->           ...
->       );
->       ```
-> 
-> 5. **DEFAULT:**
->    1. Set default value of the column.
->    2. Example:
->       ```
->       CREATE TABLE account (
->           ...
->           saving_rate DOUBLE NOT NULL DEFAULT 4.25,
->           ...
->       );
->       ```
-> 
-> 6. An attribute can be PK and FK both in a table.
-> 
-> 7. **ALTER OPERATIONS:**
->    1. Changes schema.
->    2. **ADD:**
->       ```
->       ALTER TABLE table_name ADD new_col_name datatype ADD new_col_name_2 datatype;
->       ```
->       Example:
->       ```
->       ALTER TABLE customer ADD age INT NOT NULL;
->       ```
->    3. **MODIFY:**
->       ```
->       ALTER TABLE table-name MODIFY col-name col-datatype;
->       ```
->       Example:
->       ```
->       ALTER TABLE customer MODIFY name CHAR(1024);
->       ```
->    4. **CHANGE COLUMN:**
->       ```
->       ALTER TABLE table-name CHANGE COLUMN old-col-name new-col-name new-col-datatype;
->       ```
->       Example:
->       ```
->       ALTER TABLE customer CHANGE COLUMN name customer_name VARCHAR(1024);
->       ```
->    5. **DROP COLUMN:**
->       ```
->       ALTER TABLE table-name DROP COLUMN col-name;
->       ```
->       Example:
->       ```
->       ALTER TABLE customer DROP COLUMN middle_name;
->       ```
->    6. **RENAME:**
->       ```
->       ALTER TABLE table-name RENAME TO new-table-name;
->       ```
->       Example:
->       ```
->       ALTER TABLE customer RENAME TO customer_details;
->       ```
-> 
+9. **What are some key commands and techniques used for the definition database data in SQL?**
+   > **CONSTRAINTS (DDL):**
+   > 
+   > 1. **Primary Key:**
+   >    1. PK is not null, unique, and only one per table.
+   > 
+   > 2. **Foreign Key:**
+   >    1. FK refers to PK of another table.
+   >    2. Each relation can have any number of FKs.
+   >    3. Example:
+   >       ```
+   >       CREATE TABLE ORDER (
+   >           id INT PRIMARY KEY,
+   >           delivery_date DATE,
+   >           order_placed_date DATE,
+   >           cust_id INT,
+   >           FOREIGN KEY (cust_id) REFERENCES customer(id)
+   >       );
+   >       ```
+   > 
+   > 3. **UNIQUE:**
+   >    1. Unique, can be null, and a table can have multiple unique attributes.
+   >    2. Example:
+   >       ```
+   >       CREATE TABLE customer (
+   >           ...
+   >           email VARCHAR(1024) UNIQUE,
+   >           ...
+   >       );
+   >       ```
+   > 
+   > 4. **CHECK:**
+   >    1. Example:
+   >       ```
+   >       CREATE TABLE customer (
+   >           ...
+   >           CONSTRAINT age_check CHECK (age > 12),
+   >           ...
+   >       );
+   >       ```
+   > 
+   > 5. **DEFAULT:**
+   >    1. Set default value of the column.
+   >    2. Example:
+   >       ```
+   >       CREATE TABLE account (
+   >           ...
+   >           saving_rate DOUBLE NOT NULL DEFAULT 4.25,
+   >           ...
+   >       );
+   >       ```
+   > 
+   > 6. An attribute can be PK and FK both in a table.
+   > 
+   > 7. **ALTER OPERATIONS:**
+   >    1. Changes schema.
+   >    2. **ADD:**
+   >       ```
+   >       ALTER TABLE table_name ADD new_col_name datatype ADD new_col_name_2 datatype;
+   >       ```
+   >    3. **MODIFY:**
+   >       ```
+   >       ALTER TABLE table-name MODIFY col-name col-datatype;
+   >       ```
+   >    4. **CHANGE COLUMN:**
+   >       ```
+   >       ALTER TABLE table-name CHANGE COLUMN old-col-name new-col-name new-col-datatype;
+   >       ```
+   >    5. **DROP COLUMN:**
+   >       ```
+   >       ALTER TABLE table-name DROP COLUMN col-name;
+   >       ```
+   >    6. **RENAME:**
+   >       ```
+   >       ALTER TABLE table-name RENAME TO new-table-name;
+   >       ```
 
+
+ 10. **What are some key commands and techniques used for the Manipulation of database data in SQL?** 
+   > **DATA MANIPULATION LANGUAGE (DML):**
+   > 
+   > 1. **INSERT:**
+   >    - Inserting values into a table.
+   >    ```
+   >    INSERT INTO table-name(col1, col2, col3) VALUES (v1, v2, v3), (val1, val2, val3);
+   >    ```
+   > 
+   > 2. **UPDATE:**
+   >    - Updating existing records in a table.
+   >    ```
+   >    UPDATE table-name SET col1 = 1, col2 = 'abc' WHERE id = 1;
+   >    ```
+   >    - Updating multiple rows:
+   >    ```
+   >    UPDATE student SET standard = standard + 1;
+   >    ```
+   > 
+   > 3. **ON UPDATE CASCADE:**
+   >    - Automatically updates foreign key values in related tables when primary key values are updated.
+   >    - Example:
+   >      ```
+   >      CREATE TABLE ORDER (
+   >          order_id INT PRIMARY KEY,
+   >          delivery_date DATE,
+   >          cust_id INT,
+   >          FOREIGN KEY (cust_id) REFERENCES customer(id) ON UPDATE CASCADE
+   >      );
+   >      ```
+   > 
+   > 4. **DELETE:**
+   >    - Deleting records from a table.
+   >    ```
+   >    DELETE FROM table-name WHERE id = 1;
+   >    ```
+   >    - Deleting all rows:
+   >    ```
+   >    DELETE FROM table-name;
+   >    ```
+   >    - **DELETE CASCADE:**
+   >      - Automatically deletes child entries in related tables when parent entries are deleted.
+   >      - Example:
+   >        ```
+   >        CREATE TABLE ORDER (
+   >            order_id INT PRIMARY KEY,
+   >            delivery_date DATE,
+   >            cust_id INT,
+   >            FOREIGN KEY (cust_id) REFERENCES customer(id) ON DELETE CASCADE
+   >        );
+   >        ```
+   >    - **ON DELETE SET NULL:**
+   >      - Sets foreign key values to NULL in related tables when parent entries are deleted.
+   >      - Example:
+   >        ```
+   >        CREATE TABLE ORDER (
+   >            order_id INT PRIMARY KEY,
+   >            delivery_date DATE,
+   >            cust_id INT,
+   >            FOREIGN KEY (cust_id) REFERENCES customer(id) ON DELETE SET NULL
+   >        );
+   >        ```
+   > 
+   > 5. **REPLACE:**
+   >    - Replaces existing rows or inserts new rows in a table.
+   >    - Example using REPLACE INTO:
+   >      ```
+   >      REPLACE INTO student (id, class) VALUES (4, 3);
+   >      ```
+   >    - Example using REPLACE INTO with SET:
+   >      ```
+   >      REPLACE INTO table SET col1 = val1, col2 = val2;
+   >      ```
+  
+   
+   
 
