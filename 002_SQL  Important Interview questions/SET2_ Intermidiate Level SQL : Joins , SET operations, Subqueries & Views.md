@@ -110,6 +110,6 @@
     
 3. **Explain Join V/S SET?**
 
-      ![image](https://github.com/user-attachments/assets/356001dc-22d9-4a0b-8c59-bec14ff0006a)
+        ![image](https://github.com/user-attachments/assets/356001dc-22d9-4a0b-8c59-bec14ff0006a)
 
 
