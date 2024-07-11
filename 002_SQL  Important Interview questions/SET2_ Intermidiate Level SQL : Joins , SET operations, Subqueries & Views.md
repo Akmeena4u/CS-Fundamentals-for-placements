@@ -66,6 +66,8 @@
     >      ```
     > 
     >   These methods are used to combine data from multiple tables in SQL queries.
+    > ![image](https://github.com/user-attachments/assets/d03bd8a6-32cd-4886-9708-71151562957a)
+
     > ![image](https://github.com/user-attachments/assets/7a95bf22-55e8-4232-8bc5-fde2d642e678)
 
 
