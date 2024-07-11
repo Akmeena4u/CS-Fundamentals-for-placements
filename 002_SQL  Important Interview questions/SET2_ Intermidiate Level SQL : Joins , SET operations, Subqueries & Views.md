@@ -66,4 +66,48 @@
     >      ```
     > 
     >   These methods are used to combine data from multiple tables in SQL queries.
-  
+
+---
+
+  2. **Explain all about SET Operations in SQL**
+    > **SET OPERATIONS:**
+    > 
+    > 1. Used to combine results from multiple SELECT statements.
+    > 
+    > 2. Always returns distinct rows.
+    > 
+    > 3. **UNION:**
+    >    - Combines the results of two or more SELECT statements.
+    >    - Example:
+    >      ```
+    >      SELECT * FROM table1
+    >      UNION
+    >      SELECT * FROM table2;
+    >      ```
+    >    - Note: Number of columns and their order must be the same in both SELECT statements.
+    > 
+    > 4. **INTERSECT:**
+    >    - Returns common values between two tables.
+    >    - Emulated with INNER JOIN:
+    >      ```
+    >      SELECT DISTINCT column-list FROM table-1 INNER JOIN table-2 USING(join_cond);
+    >      ```
+    >    - Example:
+    >      ```
+    >      SELECT DISTINCT * FROM table1 INNER JOIN table2 USING(id);
+    >      ```
+    > 
+    > 5. **MINUS:**
+    >    - Returns rows from the first table that do not exist in the second table.
+    >    - Emulated with LEFT JOIN and WHERE condition:
+    >      ```
+    >      SELECT column_list FROM table1 LEFT JOIN table2 ON condition WHERE table2.column_name IS NULL;
+    >      ```
+    >    - Example:
+    >      ```
+    >      SELECT id FROM table-1 LEFT JOIN table-2 USING(id) WHERE table-2.id IS NULL;
+    >      ```
+    > 
+    >   These operations are useful for combining and comparing data from multiple tables in SQL queries.
+
+
