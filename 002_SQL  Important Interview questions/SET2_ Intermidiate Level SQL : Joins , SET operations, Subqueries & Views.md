@@ -69,9 +69,9 @@
 
 
 
-  2. **Explain all about SET Operations in SQL**
+2. **Explain all about SET Operations in SQL**
      
-     **SET OPERATIONS:**These operations are useful for combining and comparing data from multiple tables in SQL queries.
+    > **SET OPERATIONS:**These operations are useful for combining and comparing data from multiple tables in SQL queries.
     > 1. Used to combine results from multiple SELECT statements.
     > 
     > 2. Always returns distinct rows.
