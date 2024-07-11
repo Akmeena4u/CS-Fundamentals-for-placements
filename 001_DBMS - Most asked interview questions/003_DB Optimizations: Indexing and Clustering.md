@@ -31,44 +31,44 @@
     > - Can decrease performance for INSERT, DELETE, and UPDATE operations due to the overhead of updating the index.
 
 5. **Explain Step-by-Step Approach to Introduce Indexing in DBMS**
->
-> 1. **Identify the Need:**
->    - Analyze frequently used queries with high disk I/O and long execution times.
->
-> 2. **Choose the Index Type:**
->    - **Primary Index:** For primary key columns.
->    - **Secondary Index:** For non-primary key columns used in WHERE clauses.
->    - **Composite Index:** For queries filtering on multiple columns.
->
-> 3. **Create the Index:**
->    - Single-Column Index:
->      ```sql
->      CREATE INDEX index_name ON table_name(column_name);
->      ```
->    - Multi-Column (Composite) Index:
->      ```sql
->      CREATE INDEX index_name ON table_name(column1, column2);
->      ```
->
-> 4. **Monitor Performance:**
->    - Use EXPLAIN to check query plans before and after indexing.
->    - Compare execution times.
->
-> 5. **Maintain the Index:**
->    - Ensure indexes are updated with data changes.
->    - Periodically rebuild indexes:
->      ```sql
->      REBUILD INDEX index_name;
->      ```
->
-> 6. **Evaluate Trade-offs:**
->    - Consider additional storage and impact on write operations.
->
-> 7. **Optimize:**
->    - Drop unused indexes:
->      ```sql
->      DROP INDEX index_name;
->      ```
+    >
+    > 1. **Identify the Need:**
+    >    - Analyze frequently used queries with high disk I/O and long execution times.
+    >
+    > 2. **Choose the Index Type:**
+    >    - **Primary Index:** For primary key columns.
+    >    - **Secondary Index:** For non-primary key columns used in WHERE clauses.
+    >    - **Composite Index:** For queries filtering on multiple columns.
+    >
+    > 3. **Create the Index:**
+    >    - Single-Column Index:
+    >      ```sql
+    >      CREATE INDEX index_name ON table_name(column_name);
+    >      ```
+    >    - Multi-Column (Composite) Index:
+    >      ```sql
+    >      CREATE INDEX index_name ON table_name(column1, column2);
+    >      ```
+    >
+    > 4. **Monitor Performance:**
+    >    - Use EXPLAIN to check query plans before and after indexing.
+    >    - Compare execution times.
+    >
+    > 5. **Maintain the Index:**
+    >    - Ensure indexes are updated with data changes.
+    >    - Periodically rebuild indexes:
+    >      ```sql
+    >      REBUILD INDEX index_name;
+    >      ```
+    >
+    > 6. **Evaluate Trade-offs:**
+    >    - Consider additional storage and impact on write operations.
+    >
+    > 7. **Optimize:**
+    >    - Drop unused indexes:
+    >      ```sql
+    >      DROP INDEX index_name;
+    >      ```
 
 ---
 
