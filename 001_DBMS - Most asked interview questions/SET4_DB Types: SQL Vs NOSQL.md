@@ -104,3 +104,16 @@
 ![image](https://github.com/user-attachments/assets/75a30b4f-fe97-4440-9411-c4191568819b)
 
 
+| Feature               | SQL Databases                                                   | NoSQL Databases                                                                                   |
+|-----------------------|-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| **Data Storage Model**| Tables with fixed rows and columns                               | Document: JSON documents,<br>Key-value: key-value pairs,<br>Wide-column: tables with rows and dynamic columns,<br>Graph: nodes and edges               |
+| **Development History**| Developed in the 1970s with a focus on reducing data duplication | Developed in the late 2000s with a focus on scaling and allowing for rapid application change driven by agile and DevOps practices                           |
+| **Examples**          | Oracle, MySQL, Microsoft SQL Server, PostgreSQL                 | Document: MongoDB and CouchDB,<br>Key-value: Redis and DynamoDB,<br>Wide-column: Cassandra and HBase,<br>Graph: Neo4j and Amazon Neptune             |
+| **Primary Purpose**   | General Purpose                                                 | Document: general purpose,<br>Key-value: large amounts of data with simple lookup queries,<br>Wide-column: large amounts of data with predictable query patterns,<br>Graph: analyzing and traversing relationships between connected data |
+| **Schemas**           | Fixed                                                           | Flexible                                                                                          |
+| **Scaling**           | Vertical (Scale-up)                                              | Horizontal (scale-out across commodity servers)                                                     |
+| **ACID Properties**   | Supported                                                       | Not Supported, except in databases like MongoDB etc.                                                |
+| **JOINS**             | Typically Required                                              | Typically not required                                                                             |
+| **Data to Object Mapping** | Required object-relational mapping                             | Many do not require ORMs. MongoDB documents map directly to data structures in most popular programming languages                                            |
+
+
