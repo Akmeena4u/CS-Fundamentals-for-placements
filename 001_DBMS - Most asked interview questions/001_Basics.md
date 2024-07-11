@@ -138,7 +138,8 @@
     > **Answer:** Aggregation is a technique in the ER model used to represent relationships among relationships. It abstracts complex relationships into higher-level entities or "abstract entities," which can then participate in relationships themselves. This approach helps in simplifying the database structure, avoiding redundancy, and improving the overall clarity of relationships within the schema.
 
 10. **What is ER Diagram symbols and notions ?**
-    > ![image](https://github.com/Akmeena4u/CS-Fundamentals-for-placements/assets/93425334/b1d9099a-c043-4772-b93b-9e937ad2470a)
+    > ![image](https://github.com/Akmeena4u/CS-Fundamentals-for-placements/assets/93425334/4239c7f1-b01b-4699-9d92-92b497ccaa9f)
+
 
 
 ---
