@@ -25,25 +25,24 @@
  
 
 4. **Describe the types of anomalies that Normalisation aims to eliminate.**
-    > - **Insertion Anomaly:** When certain data (attribute) can not be inserted into the DB without the presence of other data.
-    > -  Example : Library adds a new book, but can't if the borrower (linked by ID) isn't registered yet. the insertion fails due to missing data, even though the book information is complete.
-    > - **Deletion Anomaly:** When the deletion of a data results in Unintended loss of other data.
-    > -  A music app stores playlists with song IDs. Deleting a song might remove it from all playlists unintentionally.
-    > - **Updation Anomaly:** When update of single data value require multiple rows to be updated and due to require updation at multiple places could arises Inconsistency if we forget to update data at all places
-    > - An Albums table stores artist names. If the artist changes their name, you'd need to update it in every album entry.
+    > - **1. Insertion Anomaly:** When certain data (attribute) can not be inserted into the DB without the presence of other data.
+    >     Example: The library adds a new book, but can't if the borrower (linked by ID) isn't registered yet. the insertion fails due to missing data, even though the book information is complete.
+    > - **2. Deletion Anomaly:** When the deletion of a data results in an Unintended loss of other data.
+    >    Example: A music app stores playlists with song IDs. Deleting a song might remove it from all playlists unintentionally.
+    > - **3. Updation Anomaly:** When update of a single data value requires multiple rows to be updated and due requiring updation at multiple places could arises Inconsistency if we forget to update data at all places
+    >   Example: An Albums table stores artist names. If the artist changes their name, you'd need to update it in every album entry.
+    >
     > - **How Normalisation reduces these anomalies>**
     > - Normalisation reduce these By separating data into multiple tables based on relationships, normalization ensures each data point is stored only once.
     > - Normalization also uses foreign keys to link all tables so that Deleting a record in one table won't cascade to unintended deletions in another if the relationship is properly defined.
 
-pen_spark
 
 
 6. **What are the different Normal Forms (NF) and their requirements?**
-
-    > **Answer:**
-    > - **1NF (First Normal Form):** Requires all attributes to have atomic (indivisible) values and eliminates multi-valued attributes.
-    > - **2NF (Second Normal Form):** Builds on 1NF and eliminates partial dependencies where non-prime attributes depend on only part of the primary key.
-    > - **3NF (Third Normal Form):** Builds on 2NF and eliminates transitive dependencies where non-prime attributes depend on other non-prime attributes.
+    > A Normal form is a set of rules that define a specific level of data organization. These rules aim to reduce data redundancy and improve data integrity in relational databases. There are several normal forms, each building on the previous one:
+    > - **1NF (First Normal Form):** The most basic level. Ensures each table cell contains a single atomic value (indivisible piece of data, no multi-valued attributes ), not lists or groups of values.
+    > - **2NF (Second Normal Form):** Build on 1NF and eliminates all partial dependencies. This means all non-key attributes (non-unique identifiers) must depend entirely on the full primary key (main table identifier), not just a part of it.
+    > - **3NF (Third Normal Form):** Builds on 2NF and removes transitive dependencies. In simpler terms, no data element should depend on another non-key attribute – it should rely solely on the primary key
     > - **BCNF (Boyce-Codd Normal Form):** Requires that for every functional dependency A → B, A must be a super key, ensuring no dependencies on non-super key attributes.
 
 7. **What advantages does Normalisation offer in database management?**
