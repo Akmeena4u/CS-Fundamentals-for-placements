@@ -71,7 +71,7 @@
 
 2. **Explain all about SET Operations in SQL**
      
-    > **SET OPERATIONS:**These operations are useful for combining and comparing data from multiple tables in SQL queries.
+    > **SET OPERATIONS:** These operations are useful for combining and comparing data from multiple tables in SQL queries.
     > 1. Used to combine results from multiple SELECT statements.
     > 
     > 2. Always returns distinct rows.
@@ -107,6 +107,9 @@
     >      ```
     >      SELECT id FROM table-1 LEFT JOIN table-2 USING(id) WHERE table-2.id IS NULL;
     >      ```
-    > 
-    >   
+    
+3. **Explain Join V/S SET?**
+
+      ![image](https://github.com/user-attachments/assets/356001dc-22d9-4a0b-8c59-bec14ff0006a)
+
 
