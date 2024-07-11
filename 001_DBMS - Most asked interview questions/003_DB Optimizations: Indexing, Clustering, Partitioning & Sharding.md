@@ -72,7 +72,7 @@
 
 ---
 
-## Clustering in DBMS**
+## Clustering in DBMS
 
 1. **What is database clustering and why is it used?**
 > Database clustering, also known as making replica-sets, is the process of combining multiple servers or instances to connect to a single database. It is used when one server is not sufficient to handle the volume of data or number of requests. Clustering ensures high availability, load balancing, and data redundancy by replicating the same dataset on different servers.
@@ -93,5 +93,40 @@
 > In clustering architecture, user requests are distributed across multiple computers. Each request is executed and processed by various computer systems within the cluster. The system ensures load balancing and high availability by redistributing the workload if one node fails. This setup minimizes the chances of complete system failure, providing reliable and efficient database access.
 
 
+---
 
+## Partitioning & Sharding in DBMS
+
+1. **What is partitioning in DBMS and why is it used?**
+> Partitioning is the technique used to divide stored database objects into separate servers. Due to this, there is an increase in performance,
+and controllability of the data. We can manage huge chunks of data optimally.
+> When we horizontally scale our machines/servers, we know that it gives us a challenging time dealing with relational databases as it’s quite tough to maintain the relations. But if we apply partitioning to the database that is already scaled out i.e. equipped with multiple servers, we can partition our database among those servers and handle the big data easily.
+
+2. **How does vertical partitioning differ from horizontal partitioning?**
+> - **Vertical Partitioning:** This involves slicing the database column-wise, meaning different columns of a table are stored in separate partitions. Accessing complete tuples requires querying different servers.
+> - **Horizontal Partitioning:** This involves slicing the database row-wise, where independent rows of data tuples are stored in different servers. Each server can independently handle its own chunk of data without needing to access other servers for complete tuples.
+
+
+3. **What are the advantages of partitioning a database?**
+> **Advantages:** The advantages of partitioning a database include:
+> - **Parallelism:** Allows multiple queries to run simultaneously on different partitions.
+> - **Availability:** Increases data availability as partitions can be managed independently.
+> - **Performance:** Enhances performance by reducing the amount of data each query needs to process.
+> - **Manageability:** Makes it easier to manage large datasets.
+> - **Cost Reduction:** Reduces costs associated with vertical scaling, as partitioning optimizes the use of existing resources.
+
+4. **What is a distributed database and how is it related to partitioning?**
+> A distributed database is a single logical database spread across multiple locations (servers) interconnected by a network. It is a result of applying database optimization techniques such as clustering, partitioning, and sharding. This setup helps manage large datasets efficiently by distributing the data across multiple servers.
+
+5. **What is sharding and how does it relate to horizontal partitioning?**
+> Sharding is a technique to implement horizontal partitioning. It involves splitting data across multiple database instances and introducing a routing layer to forward requests to the appropriate instance containing the data. This approach improves scalability and availability but also introduces complexity and is not well-suited for analytical queries.
+
+**Q7: What are the pros and cons of sharding?**
+> - **Pros:**
+>   - **Scalability:** Allows the database to handle more data and traffic by distributing it across multiple instances.
+>   - **Availability:** Increases data availability as different instances can handle requests independently.
+> - **Cons:**
+>   - **Complexity:** Requires implementing partition mapping and a routing layer, making the system more complex.
+>   - **Non-uniformity:** Creates the need for re-sharding when data distribution becomes uneven.
+>   - **Not Suitable for Analytical Queries:** The data spread across different instances makes it difficult to perform analytical queries efficiently (Scatter-Gather problem).
 
