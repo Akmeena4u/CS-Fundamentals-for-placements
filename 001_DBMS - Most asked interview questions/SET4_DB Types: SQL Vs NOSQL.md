@@ -101,7 +101,6 @@
 
 ## SQL VS NOSQL
 
-![image](https://github.com/user-attachments/assets/75a30b4f-fe97-4440-9411-c4191568819b)
 
 
 | Feature               | SQL Databases                                                   | NoSQL Databases                                                                                   |
