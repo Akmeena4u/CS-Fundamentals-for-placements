@@ -71,7 +71,7 @@
 
   2. **Explain all about SET Operations in SQL**
      
-    > **SET OPERATIONS:**
+    **SET OPERATIONS:**
     > 
     > 1. Used to combine results from multiple SELECT statements.
     > 
