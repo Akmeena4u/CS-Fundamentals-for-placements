@@ -66,9 +66,11 @@
     >      ```
     > 
     >   These methods are used to combine data from multiple tables in SQL queries.
+    > ![image](https://github.com/user-attachments/assets/7a95bf22-55e8-4232-8bc5-fde2d642e678)
 
 
 
+---
 2. **Explain all about SET Operations in SQL**
      
     > **SET OPERATIONS:** These operations are useful for combining and comparing data from multiple tables in SQL queries.
