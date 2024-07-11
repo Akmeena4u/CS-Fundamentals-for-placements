@@ -67,7 +67,7 @@
     > 
     >   These methods are used to combine data from multiple tables in SQL queries.
 
----
+
 
   2. **Explain all about SET Operations in SQL**
     > **SET OPERATIONS:**
