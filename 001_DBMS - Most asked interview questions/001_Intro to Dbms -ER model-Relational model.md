@@ -146,3 +146,72 @@
 ---
 ## Relational Model
 
+
+1. **What is the Relational Model and how does it organize data?**
+
+    > **Answer:** The Relational Model organizes data into tables (relations), where each table has a unique name and consists of rows (tuples) that represent individual data points(relation). Columns in these tables represent attributes, each with its own domain of permissible values.
+
+2. **What are the key properties that define a table in the Relational Model?**
+
+    > **Answer:**
+    > - The table name must be unique within the database.
+    > - Each attribute value must be atomic (indivisible).
+    > - Attributes (columns) must have unique names.
+    > - Every tuple (row) in a table must be unique.
+    > - The order of rows and columns is not significant.
+    > - Tables must adhere to integrity constraints to maintain data consistency.
+
+3. **What are relational keys and its types in the Relational Model.**
+  
+    > **Relational keys:** Relational keys are attributes or sets of attributes that uniquely identify each tuple (row) within a relational table. They enforce uniqueness and help establish relationships between tables. The main types of relational keys include:
+    > - **Super Key (SK):** Any P&C of attributes present in a table that can uniquely identify each tuple.
+    > - **Candidate Key (CK):** minimum subset of super keys, which can uniquely identify each tuple. so basically It is a super key with no repeated attributes . CK value shouldn’t be NULL
+    > - **Primary Key (PK):** A selected candidate key used to uniquely identify each tuple in a table. It is chosen based on simplicity and efficiency.
+    > - **Alternate Key(AK):** All CK except PK.
+    > **Foreign key:** A Foreign Key (FK) in the Relational Model is an attribute or set of attributes in one table that refers to the Primary Key in another table. It establishes relationships between tables by enforcing referential integrity, ensuring that values in the FK match values in the PK of the referenced table.
+    > **Composite Key:** PK formed using at least 2 attributes.
+    > **Compound Key:** PK which is formed using 2 FK.
+    > **Surrogate Key:**Synthetic PK. it is Generated automatically by DB, usually an integer value. May be used as PK.
+
+4. **Describe Integrity Constraints in the Relational Model and their significance.**
+
+    > - **Domain Constraints:** Specify permissible values for attributes, ensuring data type consistency.
+    > - **Entity Constraints:** Require every tuple in a table to have a Primary Key, ensuring uniqueness and non-null values.
+    > - **Referential Constraints:** Maintain consistency between related tables, where values in a Foreign Key must match values in a Primary Key of another table.
+    > - **Key constraints:** These refer to rules or conditions that enforce data integrity and define the characteristics of keys within tables. like - NOT NULL, UNIQUE, CHECK,PRIMARY KEY, FOREIGN KEY
+    > - Integrity constraints prevent accidental corruption of data and ensure the reliability and consistency of the database.
+
+
+---
+---
+
+### Making of ER, ER->RM 
+
+1. **What are the Steps to make an ER Diagram?**
+
+   > - Ask requirements to customers or gather requirements from your own
+   > - Identify Unique Entity sets
+   > - Identify attributes and their types with respect to each entity
+   > - Identify relation and relationship constraints among entities -mapping & participation
+   > - Using above all details form Er diagram
+
+2. **What is the process of transforming an Entity-Relationship (ER) Model into a Relational Model?**
+
+    > Converting an ER Model into a Relational Model involves mapping entities, attributes, relationships, and constraints from the ER diagram into tables, columns, and keys in a relational database design. Following steps we can use for this transformation:
+    > **Strong entities->Tables:** Strong Entities in an ER Diagram are transformed into individual tables in the Relational Model. The entity name becomes the table name, attributes become columns, and the Primary Key (PK) of the entity serves as the table's Primary Key in the relational database.
+    > **Weak entities->Tables:** Weak Entities are represented as tables that include all their attributes. Additionally, the Primary Key of the corresponding Strong Entity is added as a Foreign Key (FK) in the weak entity's table to establish the relationship. The table's Primary Key is typically a composite key combining the FK and a partial discriminator key unique to the weak entity.
+    > **Attributes:**
+    > - **Single-Valued Attributes-> Columns:** These are directly represented as columns in the tables of the Relational Model, corresponding to their attribute names.
+    > - **Composite Attributes(can be divided) -> Separate columns:** Each component of a composite attribute is represented as a separate column in the original relation, ensuring atomicity and avoiding nested attributes.
+    > **Multi-valued attributes- >Seprate tabels:** Multivalued Attributes are transformed into separate tables named after the original attribute. These tables include columns for the entity's Primary Key (used as FK), and a column for each value of the multivalued attribute. The table's Primary Key is typically a composite key combining the FK and the name of the multivalued attribute.
+    > **Generalisation:** Generalisation in the Relational Model can be handled in two main methods:
+    > - **Method-1:** Create separate tables for each lower-level entity set and main table, including attributes of both the lower-level entity and the higher-level entity (superclass).
+    > - **Method-2:** For disjoint and complete generalisation, create separate tables for each lower-level entity set, including attributes from both the lower-level entity and the higher-level entity. This method avoids redundancy but may not handle overlapping or incomplete generalisation effectively.
+
+   > -  ![image](https://github.com/Akmeena4u/CS-Fundamentals-for-placements/assets/93425334/92926ea0-b484-4292-882f-7efa3f54b92e)
+
+
+7. **Explain the concept of Aggregation in the transformation from ER Model to Relational Model.**
+
+    > **Answer:** Aggregation involves creating a table for the relationship set itself in the Relational Model. Attributes include Primary Keys of the entity sets involved in the aggregation relationship, along with any descriptive attributes specific to the relationship.
+
