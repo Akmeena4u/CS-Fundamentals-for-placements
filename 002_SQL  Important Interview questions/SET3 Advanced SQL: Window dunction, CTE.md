@@ -1,7 +1,7 @@
 
 
 ### Interview Question: Window Functions in SQL
-1. **Can you explain what window functions are in SQL, their syntax, and use cases, and provide examples of their types?**
+#### 1. Can you explain what window functions are in SQL, their syntax, and use cases, and provide examples of their types?
 >
 > Window functions in SQL are special functions that allow you to perform calculations across a set of table rows related to the current row. Unlike normal aggregate functions like `SUM()` or `AVG()`, window functions do not collapse rows into a single result. Instead, they keep each row separate and add useful information to each row without changing the overall result set. You can use window functions to calculate rankings, running totals, compare values with others, or get values from previous or next rows in a query. They're really handy for analyzing data in more complex ways without grouping rows together.
 >
@@ -118,7 +118,7 @@
 
 ## Case Expressions
 
-2. **Can you explain the use of a CASE expression in SQL queries? Provide an example where a CASE expression would be beneficial over using traditional conditional statements.**
+#### 2. Can you explain the use of a CASE expression in SQL queries? Provide an example where a CASE expression would be beneficial over using traditional conditional statements.
 > A CASE expression in SQL allows for conditional logic within a query. It's particularly useful when you need to perform conditional checks and return different values based on those conditions, all within a single query. Unlike traditional IF-ELSE statements, CASE expressions can be used within SELECT, WHERE, ORDER BY, and GROUP BY clauses to manipulate data based on specified conditions.
 >
 > **Example Answer:**
@@ -149,7 +149,8 @@
 
 ## Common Table Expressions (CTEs)
 
- 3. **Can you explain what a Common Table Expression (CTE) is in SQL?**
+#### 3. Can you explain what a Common Table Expression (CTE) is in SQL?
+>
 > A Common Table Expression (CTE) in SQL is a temporary result set that you can reference within a SELECT, INSERT, UPDATE, or DELETE statement. It helps improve readability and simplify complex queries by breaking them into smaller, more manageable parts. Unlike subqueries, CTEs can be self-referencing and can be referenced multiple times within a query.
 >
 > **Example Answer:**
