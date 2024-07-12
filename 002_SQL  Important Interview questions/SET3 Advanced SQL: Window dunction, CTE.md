@@ -113,7 +113,7 @@
 
 
 ---
----
+
 
 
 ## Case Expressions
@@ -143,4 +143,28 @@
 > ### Summary:
 > - **CASE Statement:** Used for executing multiple statements or actions based on different conditions.
 > - **CASE Expression:** Used for returning a single value based on specified conditions within a SELECT statement.
+
+
+---
+
+## Common Table Expressions (CTEs)
+
+ 3. **Can you explain what a Common Table Expression (CTE) is in SQL?**
+> A Common Table Expression (CTE) in SQL is a temporary result set that you can reference within a SELECT, INSERT, UPDATE, or DELETE statement. It helps improve readability and simplify complex queries by breaking them into smaller, more manageable parts. Unlike subqueries, CTEs can be self-referencing and can be referenced multiple times within a query.
+>
+> **Example Answer:**
+> 
+> ```sql
+> -- Example using CTE to find employees with salaries above the average salary
+> 
+> WITH avg_salary_cte AS (
+>    SELECT AVG(salary) AS avg_salary
+>    FROM employees
+> )
+> SELECT name, salary
+> FROM employees
+> WHERE salary > (SELECT avg_salary FROM avg_salary_cte);
+> ```
+>
+> In this example, the CTE `avg_salary_cte` calculates the average salary of employees, which is then used to filter employees with salaries above the average. Using a CTE here improves query clarity and avoids repeating the average calculation.
 
