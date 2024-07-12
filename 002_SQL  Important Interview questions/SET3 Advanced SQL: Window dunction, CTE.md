@@ -101,12 +101,12 @@
 >
 > #### Practical questions
 >
->   > **Query to rank employees by their salary within each department**
->   > ```
->   > SELECT name, department_id, salary,
->   >    RANK() OVER(PARTITION BY department_id ORDER BY salary DESC) AS salary_rank
->   > FROM employees;
->   >```
+>    > **Query to rank employees by their salary within each department**
+>    > ```
+>    > SELECT name, department_id, salary,
+>    >    RANK() OVER(PARTITION BY department_id ORDER BY salary DESC) AS salary_rank
+>    > FROM employees;
+>    >```
 
 ### Summary:
 > Window functions provide a powerful way to perform complex calculations and analysis in SQL. They allow for detailed insight into data relationships without altering the structure of the result set. By partitioning and ordering rows, window functions enable precise control over how calculations are applied, making them indispensable for advanced querying and reporting tasks.
@@ -120,27 +120,27 @@
 
 2. **Can you explain the use of a CASE expression in SQL queries? Provide an example where a CASE expression would be beneficial over using traditional conditional statements.**
 > A CASE expression in SQL allows for conditional logic within a query. It's particularly useful when you need to perform conditional checks and return different values based on those conditions, all within a single query. Unlike traditional IF-ELSE statements, CASE expressions can be used within SELECT, WHERE, ORDER BY, and GROUP BY clauses to manipulate data based on specified conditions.
-
-**Example Answer:**
-
-```sql
-SELECT
-    employee_id,
-    first_name,
-    last_name,
-    salary,
-    CASE
-        WHEN salary >= 10000 THEN 'High Salary'
-        WHEN salary >= 5000 AND salary < 10000 THEN 'Medium Salary'
-        ELSE 'Low Salary'
-    END AS salary_category
-FROM
-    employees;
-```
-
+>
+> **Example Answer:**
+> 
+> ```sql
+> SELECT
+>    employee_id,
+>    first_name,
+>    last_name,
+>   salary,
+>    CASE
+>        WHEN salary >= 10000 THEN 'High Salary'
+>        WHEN salary >= 5000 AND salary < 10000 THEN 'Medium Salary'
+>        ELSE 'Low Salary'
+>    END AS salary_category
+> FROM
+>    employees;
+> ```
+>
 > In this example, the CASE expression categorizes employees based on their salary into 'High Salary', 'Medium Salary', or 'Low Salary' categories. This approach is efficient and concise compared to using multiple IF-ELSE statements or procedural code to achieve the same result.
-
-### Summary:
-- **CASE Statement:** Used for executing multiple statements or actions based on different conditions.
-- **CASE Expression:** Used for returning a single value based on specified conditions within a SELECT statement.
+>
+> ### Summary:
+> - **CASE Statement:** Used for executing multiple statements or actions based on different conditions.
+> - **CASE Expression:** Used for returning a single value based on specified conditions within a SELECT statement.
 
