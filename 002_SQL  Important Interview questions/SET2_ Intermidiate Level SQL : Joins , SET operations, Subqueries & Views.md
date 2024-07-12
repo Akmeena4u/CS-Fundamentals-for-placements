@@ -242,6 +242,7 @@
 | Types                      | > INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN                                                                 | > Single-row subquery, Multiple-row subquery, Correlated subquery, Nested subquery                            |
 | Correlated Subqueries      | > Not applicable.                                                                                              | > Correlated subqueries are subqueries that reference columns from the outer query.                           |
 | Use Case Example           | > Joining employees with their respective departments:                                                         | > Finding employees whose salary is above the average salary of their department:                             |
-| Example                    | > ```sql<br>SELECT e.name, d.name<br>FROM employees e<br>JOIN departments d ON e.department_id = d.id;<br>``` | > ```sql<br>SELECT name<br>FROM employees<br>WHERE salary > (SELECT AVG(salary) FROM employees);<br>```      |
+| Example                    | > ```SELECT e.name, d.name FROM employees e JOIN departments d ON e.department_id = d.id;``` | > ```sql<SELECT name FROM employees WHERE salary > (SELECT AVG(salary) FROM employees);```
+
 
 
