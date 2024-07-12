@@ -126,7 +126,7 @@
 
 
 2. **What are the main clauses where subqueries can be used?**
-   > Subqueries can be used in the following clauses:
+     > Subqueries can be used in the following clauses:
    > 1. Inside a WHERE clause.
    >  > ```sql
    > SELECT * FROM table1 WHERE col1 IN (SELECT col1 FROM table1);
@@ -138,6 +138,7 @@
    > SELECT MAX(rating) FROM (SELECT * FROM movie WHERE country = 'India') as temp;
    > ```
    > This query finds the maximum rating from movies where the country is 'India'.
+   > A derived subquery, also known as a derived table, is used in the FROM clause. It acts as a temporary table created for the duration of the main query.
    > 
    > 3. Inside a SELECT clause.
    > ```sql
@@ -148,9 +149,9 @@
 
 
 3. **How many types of subqueries are there in SQL based on the number of rows they return?:**
-  > Subqueries in SQL can also be classified based on the number of rows they return. The main types are:
+    > Subqueries in SQL can also be classified based on the number of rows they return. The main types are:
 
-1. **Single-row Subquery:**
+   > 1. **Single-row Subquery:**
    > A single-row subquery returns only one row of results. It is typically used with comparison operators like `=`, `>`, `<`.
    > 
    > **Example:**
@@ -160,8 +161,8 @@
    > WHERE salary = (SELECT MAX(salary) FROM employees);
    > ```
    > This query retrieves the name of the employee with the highest salary.
-
-2. **Multiple-row Subquery:**
+   >
+   > 2. **Multiple-row Subquery:**
    > A multiple-row subquery returns more than one row of results. It is typically used with operators like `IN`, `ANY`, `ALL`.
    > 
    > **Example:**
@@ -173,8 +174,8 @@
    >                         WHERE location_id = 1700);
    > ```
    > This query retrieves the names of employees who work in departments located in location 1700.
-
-3. **Correlated Subquery:**
+   >
+   > 3. **Correlated Subquery:**
    > A correlated subquery references columns from the outer query and is executed once for each row processed by the outer query.
    > 
    > **Example:**
@@ -186,8 +187,8 @@
    >                 WHERE e1.department_id = e2.department_id);
    > ```
    > This query retrieves the names of employees whose salary is above the average salary of their department.
-
-4. **Nested Subquery:**
+   >
+   > 4. **Nested Subquery:**
    > A nested subquery is a subquery within another subquery. It allows for more complex querying by layering conditions.
    > 
    > **Example:**
@@ -201,53 +202,16 @@
    >                                            WHERE manager_name = 'John Doe'));
    > ```
    > This query retrieves the names of employees who work in the department managed by 'John Doe'.
-
-> These classifications help in understanding the different ways subqueries can be utilized to handle various data retrieval requirements in SQL.
-
-6. **What is a derived subquery? Provide an example.**
-   > A derived subquery is a subquery used in the FROM clause, often referred to as a derived table or subquery in the FROM clause.
-   > Example:
-   > ```sql
-   > SELECT columnLists(s) FROM (SELECT columnLists(s) FROM table_name WHERE [condition]) as new_table_name;
-   > ```
+   > These classifications help in understanding the different ways subqueries can be utilized to handle various data retrieval requirements in SQL.
 
 
-3. **What is the difference between a subquery and a join?**
-   > A subquery is a query within another query, often used to return a single value or a list of values to be used in the main query. A join combines rows from two or more tables based on a related column between them, and it typically produces a result set with columns from both tables.
 
-### Intermediate Questions
-
-4. **Can a subquery be used in a SELECT clause?**
-   > Yes, a subquery can be used in a SELECT clause. It can be used to return a single value which is then included in the results of the main query.
-
-5. **What is a correlated subquery?**
-   > A correlated subquery is a subquery that references columns from the outer query. It is evaluated once for each row processed by the outer query.
-
-6. **Provide an example of a correlated subquery.**
-   > ```sql
-   > SELECT e1.name, e1.salary
-   > FROM employees e1
-   > WHERE e1.salary > (SELECT AVG(e2.salary) FROM employees e2 WHERE e2.department_id = e1.department_id);
-   > ```
-   > This query selects employees whose salary is greater than the average salary in their department.
-
-7. **Can you use subqueries in the FROM clause?**
-   > Yes, subqueries can be used in the FROM clause, often referred to as derived tables or inline views.
-
-8. **What is the difference between a single-row and a multiple-row subquery?**
-   > A single-row subquery returns only one row of results, while a multiple-row subquery can return more than one row of results.
-
-### Advanced Questions
-
-9. **Can a subquery return multiple columns?**
-   > Yes, a subquery can return multiple columns, especially when used in the FROM clause.
-
-10. **What are the restrictions on subqueries in SQL?**
+4. **What are the restrictions on subqueries in SQL?**
    > - A subquery must be enclosed in parentheses.
    > - A subquery must appear on the right side of the comparison operator.
    > - In a WHERE or HAVING clause, a subquery cannot use the ORDER BY clause, but it can be used in subqueries within the FROM clause.
 
-11. **How can you use subqueries with the EXISTS operator?**
+5. **How can you use subqueries with the EXISTS operator?**
    > The EXISTS operator is used to test for the existence of any record in a subquery. It returns true if the subquery returns one or more records.
    > ```sql
    > SELECT name
@@ -255,39 +219,29 @@
    > WHERE EXISTS (SELECT 1 FROM departments d WHERE e.department_id = d.id);
    > ```
 
-12. **Explain the use of IN and NOT IN with subqueries.**
-   > The IN operator allows you to specify multiple values in a WHERE clause, and the subquery can return a set of values to be used with IN.
-   > ```sql
-   > SELECT name
-   > FROM employees
-   > WHERE department_id IN (SELECT id FROM departments WHERE location = 'New York');
-   > ```
-   > The NOT IN operator works similarly but returns rows where the column value is not in the set of values returned by the subquery.
 
-### Practical Questions
-
-13. **Write a query to find employees who earn more than the average salary of their department.**
+6. **Write a query to find employees who earn more than the average salary of their department.**
    > ```sql
    > SELECT name
    > FROM employees e
    > WHERE salary > (SELECT AVG(salary) FROM employees WHERE department_id = e.department_id);
    > ```
 
-14. **Write a query to find departments that have no employees.**
-   > ```sql
-   > SELECT name
-   > FROM departments d
-   > WHERE NOT EXISTS (SELECT 1 FROM employees e WHERE e.department_id = d.id);
-   > ```
+7. **What is the difference between a subquery and a join?**
+   > A subquery is a query within another query, often used to return a single value or a list of values to be used in the main query. A join combines rows from two or more tables based on a related column between them, and it typically produces a result set with columns from both tables.
+   > Here is the detailed difference between JOIN and Subquery in tabular form:
 
-15. **Write a query to find the second highest salary in the employees table.**
-   > ```sql
-   > SELECT MAX(salary)
-   > FROM employees
-   > WHERE salary < (SELECT MAX(salary) FROM employees);
-   > ```
-
-These questions cover a range of basic to advanced topics related to subqueries in SQL and should help you prepare for interviews effectively.
-
+| Criteria                   | JOIN                                                                                                           | Subquery                                                                                                      |
+|----------------------------|---------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| Definition                 | > Combines rows from two or more tables based on a related column between them.                                | > A query nested within another query.                                                                        |
+| Usage                      | > Used to retrieve data from multiple tables in a single query.                                                | > Used to perform operations that need results from another query.                                            |
+| Syntax                     | > `SELECT columns FROM table1 JOIN table2 ON table1.column = table2.column;`                                   | > `SELECT columns FROM table1 WHERE column = (SELECT column FROM table2 WHERE condition);`                    |
+| Performance                | > Generally faster for large datasets as it directly combines tables.                                          | > Can be slower for large datasets as the inner query is executed for each row of the outer query.            |
+| Readability                | > Can be more readable and easier to understand, especially for complex queries involving multiple tables.     | > Can become complex and harder to read when nested deeply.                                                   |
+| Result Set                 | > Produces a result set with columns from both or all joined tables.                                           | > Produces a result set from the outer query, which can be influenced by the result of the subquery.          |
+| Types                      | > INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN                                                                 | > Single-row subquery, Multiple-row subquery, Correlated subquery, Nested subquery                            |
+| Correlated Subqueries      | > Not applicable.                                                                                              | > Correlated subqueries are subqueries that reference columns from the outer query.                           |
+| Use Case Example           | > Joining employees with their respective departments:                                                         | > Finding employees whose salary is above the average salary of their department:                             |
+| Example                    | > ```sql<br>SELECT e.name, d.name<br>FROM employees e<br>JOIN departments d ON e.department_id = d.id;<br>``` | > ```sql<br>SELECT name<br>FROM employees<br>WHERE salary > (SELECT AVG(salary) FROM employees);<br>```      |
 
 
