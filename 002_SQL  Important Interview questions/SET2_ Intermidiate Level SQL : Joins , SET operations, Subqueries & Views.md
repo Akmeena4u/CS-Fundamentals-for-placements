@@ -230,19 +230,19 @@
 7. **What is the difference between a subquery and a join?**
    > A subquery is a query within another query, often used to return a single value or a list of values to be used in the main query. A join combines rows from two or more tables based on a related column between them, and it typically produces a result set with columns from both tables.
    > Here is the detailed difference between JOIN and Subquery in tabular form:
-
-| Criteria                   | JOIN                                                                                                           | Subquery                                                                                                      |
-|----------------------------|---------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| Definition                 | > Combines rows from two or more tables based on a related column between them.                                | > A query nested within another query.                                                                        |
-| Usage                      | > Used to retrieve data from multiple tables in a single query.                                                | > Used to perform operations that need results from another query.                                            |
-| Syntax                     | > `SELECT columns FROM table1 JOIN table2 ON table1.column = table2.column;`                                   | > `SELECT columns FROM table1 WHERE column = (SELECT column FROM table2 WHERE condition);`                    |
-| Performance                | > Generally faster for large datasets as it directly combines tables.                                          | > Can be slower for large datasets as the inner query is executed for each row of the outer query.            |
-| Readability                | > Can be more readable and easier to understand, especially for complex queries involving multiple tables.     | > Can become complex and harder to read when nested deeply.                                                   |
-| Result Set                 | > Produces a result set with columns from both or all joined tables.                                           | > Produces a result set from the outer query, which can be influenced by the result of the subquery.          |
-| Types                      | > INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN                                                                 | > Single-row subquery, Multiple-row subquery, Correlated subquery, Nested subquery                            |
-| Correlated Subqueries      | > Not applicable.                                                                                              | > Correlated subqueries are subqueries that reference columns from the outer query.                           |
-| Use Case Example           | > Joining employees with their respective departments:                                                         | > Finding employees whose salary is above the average salary of their department:                             |
-| Example                    | > ```SELECT e.name, d.name FROM employees e JOIN departments d ON e.department_id = d.id;``` | > ```sql<SELECT name FROM employees WHERE salary > (SELECT AVG(salary) FROM employees);```
+    
+    | Criteria                   | JOIN                                                                                                           | Subquery                                                                                                      |
+    |----------------------------|---------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+    | Definition                 | > Combines rows from two or more tables based on a related column between them.                                | > A query nested within another query.                                                                        |
+    | Usage                      | > Used to retrieve data from multiple tables in a single query.                                                | > Used to perform operations that need results from another query.                                            |
+    | Syntax                     | > `SELECT columns FROM table1 JOIN table2 ON table1.column = table2.column;`                                   | > `SELECT columns FROM table1 WHERE column = (SELECT column FROM table2 WHERE condition);`                    |
+    | Performance                | > Generally faster for large datasets as it directly combines tables.                                          | > Can be slower for large datasets as the inner query is executed for each row of the outer query.            |
+    | Readability                | > Can be more readable and easier to understand, especially for complex queries involving multiple tables.     | > Can become complex and harder to read when nested deeply.                                                   |
+    | Result Set                 | > Produces a result set with columns from both or all joined tables.                                           | > Produces a result set from the outer query, which can be influenced by the result of the subquery.          |
+    | Types                      | > INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN                                                                 | > Single-row subquery, Multiple-row subquery, Correlated subquery, Nested subquery                            |
+    | Correlated Subqueries      | > Not applicable.                                                                                              | > Correlated subqueries are subqueries that reference columns from the outer query.                           |
+    | Use Case Example           | > Joining employees with their respective departments:                                                         | > Finding employees whose salary is above the average salary of their department:                             |
+    | Example                    | > ```SELECT e.name, d.name FROM employees e JOIN departments d ON e.department_id = d.id;``` | > ```sql<SELECT name FROM employees WHERE salary > (SELECT AVG(salary) FROM employees);```
 
 
 ---
@@ -251,26 +251,26 @@
 
 
 1. **Explain what MySQL views are and how they are used in database management.**
-  
-  > 1. **Definition and Purpose**: MySQL views are virtual tables generated by queries. They do not store data themselves but instead display data from underlying tables or other views. Views are used to simplify complex queries, enforce data security through restricted access, and enhance data organization.
-  >
-  > 2. **Characteristics**: Views in MySQL mirror the structure of real tables with rows and columns. They provide a way to present subsets of data or transformations of data without altering the original tables.
-  >
-  > 3. **Advantages**: Views allow for data abstraction, enabling users to work with specific data subsets relevant to their needs without exposing the entire database structure. They can encapsulate complex joins and calculations, promoting code reuse and maintainability.
-  >
-  > 4. **Syntax and Operations**: Views are created using the `CREATE VIEW` statement, which defines the view's structure based on a `SELECT` query. They can be modified using `ALTER VIEW` and removed using `DROP VIEW`. Views automatically reflect changes in the underlying tables or views they are based on.
-  >
-  > **Example Answer:**
-  >
-  > ```sql
-  > -- Example: Creating a view to display course details with trainer information
-  >
-  > CREATE VIEW Trainer AS
-  > SELECT c.course_name, c.trainer, t.email
-  > FROM courses c
-  > JOIN contact t ON c.id = t.id;
-  >```
-  > In this example, the `Trainer` view is created to show course names, trainers, and their contact emails by joining the `courses` and `contact` tables. Any updates to the `courses` or `contact` tables will automatically reflect in the `Trainer` view, ensuring data consistency.
+    
+    > 1. **Definition and Purpose**: MySQL views are virtual tables generated by queries. They do not store data themselves but instead display data from underlying tables or other views. Views are used to simplify complex queries, enforce data security through restricted access, and enhance data organization.
+    >
+    > 2. **Characteristics**: Views in MySQL mirror the structure of real tables with rows and columns. They provide a way to present subsets of data or transformations of data without altering the original tables.
+    >
+    > 3. **Advantages**: Views allow for data abstraction, enabling users to work with specific data subsets relevant to their needs without exposing the entire database structure. They can encapsulate complex joins and calculations, promoting code reuse and maintainability.
+    >
+    > 4. **Syntax and Operations**: Views are created using the `CREATE VIEW` statement, which defines the view's structure based on a `SELECT` query. They can be modified using `ALTER VIEW` and removed using `DROP VIEW`. Views automatically reflect changes in the underlying tables or views they are based on.
+    >
+    > **Example Answer:**
+    >
+    > ```sql
+    > -- Example: Creating a view to display course details with trainer information
+    >
+    > CREATE VIEW Trainer AS
+    > SELECT c.course_name, c.trainer, t.email
+    > FROM courses c
+    > JOIN contact t ON c.id = t.id;
+    >```
+    > In this example, the `Trainer` view is created to show course names, trainers, and their contact emails by joining the `courses` and `contact` tables. Any updates to the `courses` or `contact` tables will automatically reflect in the `Trainer` view, ensuring data consistency.
 
 
 
