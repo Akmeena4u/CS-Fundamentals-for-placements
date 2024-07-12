@@ -103,29 +103,13 @@
 >   > ```
 
 > #### Practical questions
-
+>
+>   **Query to rank employees by their salary within each department**
+> ```
+> SELECT name, department_id, salary,
+>       RANK() OVER(PARTITION BY department_id ORDER BY salary DESC) AS salary_rank
+> FROM employees;
 ```
--- Query to rank employees by their salary within each department
-SELECT name, department_id, salary,
-       RANK() OVER(PARTITION BY department_id ORDER BY salary DESC) AS salary_rank
-FROM employees;
-```
-
-```
--- Query to find the top 3 highest-paid employees in each department using window functions
-SELECT name, department_id, salary
-FROM (
-    SELECT name, department_id, salary,
-           ROW_NUMBER() OVER(PARTITION BY department_id ORDER BY salary DESC) AS salary_rank
-    FROM employees
-) ranked_employees
-WHERE salary_rank <= 3;
-```
-
-> These SQL queries demonstrate the use of window functions (`RANK()` and `ROW_NUMBER()`) with the `OVER` clause and `PARTITION BY` to achieve ranking and filtering based on specific criteria within each department.
-
-
-
 
 ### Summary:
 > Window functions provide a powerful way to perform complex calculations and analysis in SQL. They allow for detailed insight into data relationships without altering the structure of the result set. By partitioning and ordering rows, window functions enable precise control over how calculations are applied, making them indispensable for advanced querying and reporting tasks.
