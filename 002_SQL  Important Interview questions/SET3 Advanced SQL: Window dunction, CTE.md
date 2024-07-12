@@ -2,11 +2,9 @@
 
 ### Interview Question: Window Functions in SQL
 
-**Question:**
-> Can you explain what window functions are in SQL, their syntax, and use cases, and provide examples of their types?
-
-**Answer:**
-> **Window functions** in SQL operate on a set of rows and return a single value for each row from the underlying query. They perform calculations across a set of table rows related to the current row. Window functions do not cause rows to become grouped into a single output row like aggregate functions do. Instead, rows retain their separate identities. The typical syntax for a window function includes an `OVER` clause which defines the window of rows that the function will operate on.
+1. **Can you explain what window functions are in SQL, their syntax, and use cases, and provide examples of their types?**
+>
+> Window functions in SQL are special functions that allow you to perform calculations across a set of table rows related to the current row. Unlike normal aggregate functions like `SUM()` or `AVG()`, window functions do not collapse rows into a single result. Instead, they keep each row separate and add useful information to each row without changing the overall result set. You can use window functions to calculate rankings, running totals, compare values with others, or get values from previous or next rows in a query. They're really handy for analyzing data in more complex ways without grouping rows together.
 >
 > ### Window Function Syntax:
 > ```
@@ -101,15 +99,15 @@
 >   >        LEAD(salary, 1) OVER (ORDER BY employee_id) AS next_salary
 >   > FROM employees;
 >   > ```
-
+>
 > #### Practical questions
 >
->   **Query to rank employees by their salary within each department**
-> ```
-> SELECT name, department_id, salary,
->       RANK() OVER(PARTITION BY department_id ORDER BY salary DESC) AS salary_rank
-> FROM employees;
-```
+>   > **Query to rank employees by their salary within each department**
+>   > ```
+>   > SELECT name, department_id, salary,
+>   >    RANK() OVER(PARTITION BY department_id ORDER BY salary DESC) AS salary_rank
+>   > FROM employees;
+>   >```
 
 ### Summary:
 > Window functions provide a powerful way to perform complex calculations and analysis in SQL. They allow for detailed insight into data relationships without altering the structure of the result set. By partitioning and ordering rows, window functions enable precise control over how calculations are applied, making them indispensable for advanced querying and reporting tasks.
