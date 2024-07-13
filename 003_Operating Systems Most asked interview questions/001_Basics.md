@@ -7,11 +7,12 @@
 > Application software performs specific tasks for the user.
 > System software operates and controls the computer system and provides a platform to run application software.
 >
->  ![image](https://github.com/user-attachments/assets/1f664c92-843c-417f-bd81-9cac50091729)
+>  - ![image](https://github.com/user-attachments/assets/1f664c92-843c-417f-bd81-9cac50091729)
 
 ### Describe the relationship between all computer components.
 >The components of a computer system work together in an interconnected and interdependent manner. This collaboration ensures the smooth operation and functionality of the computer. Here's an overview of how these components relate to each other:
 > The user interacts with application programs, which in turn rely on the operating system to interact with the computer hardware. The operating system serves as an intermediary, managing resources and providing a stable environment for applications to run.
+>
 > ![image](https://github.com/user-attachments/assets/376bf0ea-dde3-4441-8456-a332c0e063c5)
 
 
