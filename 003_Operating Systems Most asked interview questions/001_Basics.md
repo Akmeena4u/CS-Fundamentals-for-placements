@@ -35,42 +35,27 @@
 
 ### What are the types of operating systems mentioned?
 >
->![image](https://github.com/user-attachments/assets/04d9d076-e1f7-40aa-86f8-eb414f781b44)
+> - ![image](https://github.com/user-attachments/assets/56648d3c-327b-4443-9689-da20fadfd775)
 >
 > **Single process OS**
 > - A single-process operating system allows only one process to execute at a time from the ready queue. This is the oldest type of operating system.
 >
 > **Batch processing OS**
 >- In a batch-processing operating system, the user prepares their job using punch cards and submits it to the computer operator. The operator collects jobs from different  
-users and sorts them into batches based on similar needs. These batches are then submitted to the processor one by one, with all jobs in a batch being executed together.  However, this system has several disadvantages. It does not allow for setting priorities if a job has higher importance, which can lead to starvation if a batch takes too long to complete. Additionally, the CPU may become idle during I/O operations.
+   users and sorts them into batches based on similar needs. These batches are then submitted to the processor one by one, with all jobs in a batch being executed together.  
+   However, this system has several disadvantages. It does not allow for setting priorities if a job has higher importance, which can lead to starvation if a batch takes too 
+   long to complete. Additionally, the CPU may become idle during I/O operations.
 > - ![image](https://github.com/user-attachments/assets/e27d73a9-7f67-4b6c-b4f0-5fe8af2b8ac9)
+>
+> **Multiprogramming OS**
+>A multiprogramming operating system increases CPU utilization by keeping multiple jobs (code and data) in memory, ensuring that the CPU always has a job to execute if another job gets busy with I/O operations. This system involves a single CPU and utilizes context switching for processes, where the switch occurs when the current process goes into the wait state. As a result, the CPU's idle time is significantly reduced.
+>
+> **Multitasking OS**
+>Multitasking is a logical extension of multiprogramming that involves a single CPU with the capability to run more than one task simultaneously. It utilizes context-switching and time-sharing techniques to manage multiple tasks, leading to increased responsiveness and further reduced CPU idle time.
+>
+>**Multiprograming OS**
+>A multiprogramming operating system offers several advantages, including the use of more than one CPU in a single computer, which increases reliability as other CPUs can continue working if one fails. This setup results in better throughput and reduces process starvation, as multiple CPUs can handle additional processes if one CPU is busy with a particular task.
 
-
-
-### How does a multiprogramming operating system increase CPU utilization?
-
-> A multiprogramming operating system increases CPU utilization by keeping multiple jobs (code and data) in memory so that the CPU always has one to execute in case some job gets busy with I/O. This involves:
-> - Single CPU
-> - Context switching for processes
-> - Switch happens when the current process goes to the wait state
-> - CPU idle time is reduced
-
-### What is multitasking in the context of operating systems?
-
-> Multitasking is a logical extension of multiprogramming, involving:
-> - Single CPU
-> - The ability to run more than one task simultaneously
-> - Context switching and time sharing used
-> - Increased responsiveness
-> - Further reduced CPU idle time
-
-### What are the advantages of a multi-processing operating system?
-
-> Advantages of a multi-processing operating system include:
-> - More than one CPU in a single computer
-> - Increased reliability (if one CPU fails, others can work)
-> - Better throughput
-> - Lesser process starvation (if one CPU is working on a process, others can handle additional processes)
 
 ### Describe a distributed operating system.
 
