@@ -1,4 +1,25 @@
 
+### Table of Contents
+
+| No. | Questions |
+| --- | --------- |
+| 1 | [Introduction to Computers and Components](#explain-about-computer-and-its-components) |
+| 2 | [Describe the Relationship Between All Computer Components](#describe-the-relationship-between-all-computer-components) |
+| 3 | [Explain the Operating System, Its Goals & Functions](#explain-the-operating-system-its-goals--functions) |
+| 4 | [What Are Some Potential Issues If There Were No Operating System?](#what-are-some-potential-issues-if-there-were-no-operating-system) |
+| 5 | [Types of Operating Systems Mentioned](#what-are-the-types-of-operating-systems-mentioned) |
+| 6 | [Difference Between Program, Process, and Thread](#what-is-the-difference-between-a-program-process-and-thread) |
+| 7 | [Concepts of Multitasking and Multithreading](#what-is-the-concept-of-multitasking-and-multithreading) |
+| 8 | [Differences in Memory Management and Isolation Between Processes and Threads](#what-are-the-differences-in-memory-management-and-isolation-between-processes-and-threads) |
+| 9 | [Explanation of Context Switching](#what-is-context-switching) |
+| 10 | [Components of an Operating System](#explain-about-components-of-os) |
+| 11 | [How Do Applications from Userspace Interact with the Kernel in an Operating System?](#how-do-applications-from-userspace-interact-with-the-kernel-in-an-operating-system) |
+| 12 | [Types of System Calls Commonly Used in Operating Systems](#can-you-explain-the-types-of-system-calls-commonly-used-in-operating-systems) |
+| 13 | [Inter-Process Communication (IPC) Between Processes](#how-does-inter-process-communication-ipc-occur-between-processes-in-an-operating-system) |
+| 14 | [What Happens When You Turn On Your Computer?](#what-happens-when-you-turn-on-your-computer) |
+| 15 | [Key Differences Between a 32-bit and a 64-bit Operating System](#what-are-the-key-differences-between-a-32-bit-and-a-64-bit-operating-system) |
+| 16 | [Types of Memory Present in a Computer System](#what-are-the-different-types-of-memory-present-in-a-computer-system) |
+
 
 ### Explain about Computer and its components 
 > - A computer is an electronic device that can perform a variety of tasks by executing programmed instructions. These tasks can include calculations, data processing, and  
@@ -133,17 +154,15 @@
 
 ### What happens when you turn on your computer?
 > When you switch on a computer, several key processes occur sequentially:
->
+> 
 > 1. **BIOS Activation and POST (Power On Self Test):**
 >    - When the power button is pressed, the Basic Input Output System (BIOS) is the first chipset to activate.
 >    - BIOS performs a Power On Self Test (POST) to check if essential hardware components like keyboard, RAM, and disk drives are functioning properly.
 >    - It provides audible beep codes to indicate the status of these components.
->
 > 2. **Boot Sequence and MBR (Master Boot Record):**
 >    - BIOS initiates the boot sequence by identifying a storage device (usually a hard drive or SSD) based on its configured boot order.
 >    - It loads the Master Boot Record (MBR), located in the first 512 bytes of the storage device.
 >    - The MBR contains a partition table that identifies bootable partitions.
->
 > 3. **Bootloader Execution:**
 >    - Once the bootable partition is identified, BIOS hands over control to the bootloader stored in the partition's first 512 bytes.
 >    - Popular bootloaders include GRUB or LILO for Linux, and the Windows Bootloader for Windows OS.
@@ -152,10 +171,26 @@
 >    - The kernel (e.g., Linux kernel or Windows NT kernel) is loaded into RAM by the bootloader.
 >    - It performs a series of tasks, including auto-probing to ensure hardware functionality (e.g., WiFi, hard drives).
 >    - System daemons (background services like networking) are started by the kernel.
->
 > 5. **GUI or Display Manager Start:**
 >    - Finally, the kernel initializes the Graphical User Interface (GUI) or Display Manager, which presents the login screen.
 >    - Users interact with this interface to log in and access the computer's functionalities.
 >
 > This sequential process, starting from BIOS activation to GUI initialization, ensures that the computer boots up and is ready for user interaction.
 
+
+###  What are the key differences between a 32-bit and a 64-bit operating system?
+> A 32-bit OS uses 32-bit registers and can access up to 4GB of physical memory, whereas a 64-bit OS utilizes 64-bit registers and can access vastly more memory, specifically up to 17,179,869,184 GB."
+> - **Advantages of 64-bit OS:**
+>   - **Addressable Memory:** "64-bit OS can access a significantly larger amount of memory addresses, improving system scalability and support for memory-intensive applications."
+>   - **Resource Usage:** "Upgrading to a 64-bit OS allows systems to utilize more RAM effectively, enhancing overall performance, which is limited in a 32-bit environment."
+>   - **Performance:** "64-bit CPUs can perform larger calculations per instruction cycle due to their wider registers, leading to potentially faster computation times."
+>   - **Compatibility:** "64-bit CPUs can run both 32-bit and 64-bit OS and applications, offering flexibility and backward compatibility, whereas 32-bit CPUs are limited to running only 32-bit software."
+>   - **Graphics Performance:** "The wider data paths in 64-bit systems enable more efficient processing of graphics-intensive tasks, resulting in better graphics performance compared to 32-bit systems."
+
+
+ ### What are the different types of memory present in a computer system?
+> - **Register:** "Registers are the smallest units of storage located directly within the CPU. They hold instructions, memory addresses, or data that the CPU is actively processing."
+> - **Cache:** "Cache is a specialized type of memory that sits between the CPU and main memory (RAM). It stores frequently accessed data and instructions to speed up CPU operations."
+> - **Main Memory (RAM):** "Main memory, or RAM (Random Access Memory), is the primary volatile memory used by the computer to store data and instructions that are actively being used by the CPU."
+> - **Secondary Memory (Storage):** "Secondary memory refers to storage devices such as hard drives, SSDs, and optical discs. These devices provide long-term storage for data and programs that persist even when the computer is powered off."
+> - ![image](https://github.com/user-attachments/assets/726e0278-1bb1-4a40-b591-d5bf6084072f)
