@@ -187,9 +187,9 @@
 > - Processes are permanently assigned to one queue based on criteria such as process type, priority, or other characteristics.
 > - System process: Created by OS (Highest priority) Interactive process (Foreground process): Needs user input (I/O). Batch process (Background process): Runs silently, no user input required
 > - Each queue has its own scheduling algorithm. E.g., SP -> RR, IP -> RR & BP -> FCFS.
-> 
+> ---
 > - **Multilevel Feedback Queue Scheduling:** Allows the process to move between queues. The idea is to separate processes according to the characteristics of their BT. If a process uses too much CPU time, it will be moved to lower priority queue. This scheme leaves I/O bound and interactive processes in the higher-priority queue.
 > - In addition, a process that waits too much in a lower-priority queue may be moved to a higher priority queue. This form of ageing prevents starvation. 
->
-> ![image](https://github.com/user-attachments/assets/0562045a-d773-4ba5-a87b-f03a29d43c03)
+>---
+> - ![image](https://github.com/user-attachments/assets/0562045a-d773-4ba5-a87b-f03a29d43c03)
 
