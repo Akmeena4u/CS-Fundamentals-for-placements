@@ -14,11 +14,12 @@
 | 5 | [Why are variable-length data types like VARCHAR preferred over fixed-length types like CHAR?](#why-are-variable-length-data-types-like-varchar-preferred-over-fixed-length-types-like-char) |
 | 6 | [Explain Types of SQL commands.](#explain-types-of-sql-commands) |
 | 7 | [What are some key commands and techniques used for managing database data in SQL?](#what-are-some-key-commands-and-techniques-used-for-managing-database-data-in-sql) |
-| 8 | [What are some key commands and techniques used for retrieving database data in SQL?](#what-are-some-key-commands-and-techniques-used-for-retrieving-database-data-in-sql) |
+| 8 | [What are some key commands and techniques used for Retrieving database data in SQL?](#what-are-some-key-commands-and-techniques-used-for-retrieving-database-data-in-sql) |
 | 9 | [What are some key commands and techniques used for the definition database data in SQL?](#what-are-some-key-commands-and-techniques-used-for-the-definition-database-data-in-sql) |
-| 10 | [What are some key commands and techniques used for the manipulation of database data in SQL?](#what-are-some-key-commands-and-techniques-used-for-the-manipulation-of-database-data-in-sql) |
-
+| 10 | [What are some key commands and techniques used for the Manipulation of database data in SQL?](#what-are-some-key-commands-and-techniques-used-for-the-manipulation-of-database-data-in-sql) |
 <!-- TOC_END -->
+
+Feel free to let me know if there's anything else you'd like to add or modify!
 
 
 1. **What is SQL?**
