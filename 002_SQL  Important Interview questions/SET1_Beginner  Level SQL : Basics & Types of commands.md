@@ -1,5 +1,5 @@
 
-### Interview Questions on SQL
+
 
 
 ### Table of Contents
@@ -20,7 +20,6 @@
 
 <!-- TOC_END -->
 
-Feel free to navigate directly to any question by clicking on the links above for detailed explanations.
 
 1. **What is SQL?**
    > SQL stands for Structured Query Language, which is used to access and manipulate data in relational databases. It provides a standard way of performing CRUD operations: Create, Read, Update, and Delete.
