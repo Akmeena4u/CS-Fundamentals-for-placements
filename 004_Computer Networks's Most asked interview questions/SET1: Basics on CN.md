@@ -88,52 +88,26 @@
 
 ### What are the key differences between LAN, WAN, and MAN?
 > LAN (Local Area Network), WAN (Wide Area Network), and MAN (Metropolitan Area Network) are types of networks distinguished primarily by their geographical coverage, scale, and the types of services they support. Here are the key differences:
-> **LAN (Local Area Network):**
+> - **LAN (Local Area Network):**
 > LAN typically covers a small geographic area, such as a building or campus. Often privately owned, used for office or building-wide networking.
 > **Example:** A LAN can include computers within a single office floor or an entire building.
 >
-> **WAN (Wide Area Network):** WAN spans a large geographic area, connecting multiple LANs and other networks.Encompasses networks across cities, states, or even countries.
+> - **WAN (Wide Area Network):** WAN spans a large geographic area, connecting multiple LANs and other networks.Encompasses networks across cities, states, or even countries.
 > **Example:** The network covering the entire state of Uttar Pradesh (UP) qualifies as a WAN.
 >
-> **MAN (Metropolitan Area Network):**  MAN falls between LAN and WAN in size, covering a larger area than LAN but smaller than WAN. Typically encompasses a city or metropolitan area.
+> - **MAN (Metropolitan Area Network):**  MAN falls between LAN and WAN in size, covering a larger area than LAN but smaller than WAN. Typically encompasses a city or metropolitan area.
 > **Example:** The network infrastructure across Mumbai serves as a MAN.
 >
 > - ![image](https://github.com/user-attachments/assets/e1dc4337-fc4f-4764-84ba-932521dd13a3)
 
-
-Certainly! Here's a concise explanation and interview question in blockquoted format:
-
-**Unicast, Broadcast, and Multicast in Computer Networking:**
-
-**Unicast:**
-> **Description:** Unicast transmission sends data from one sender to one receiver.
-> 
-> **Usage:** Used for point-to-point communication where a single sender addresses a specific recipient.
-> 
-> **Example:** Sending an email to a specific email address is a unicast communication.
-
-**Broadcast:**
-> **Description:** Broadcast transmission sends data from one sender to all devices within the network.
-> 
-> **Usage:** Used to deliver data simultaneously to all devices in a LAN to notify them of events or updates.
-> 
-> **Example:** Broadcasting a message to all computers in a local network about network maintenance.
-
-**Multicast:**
-> **Description:** Multicast transmission sends data from one sender to a specific group of recipients.
-> 
-> **Usage:** Efficient for applications where multiple recipients are interested in the same data stream.
-> 
-> **Example:** Streaming a live video feed to multiple users simultaneously over the internet.
 
 
 
 ### Differentiate between Unicast, Broadcast, and Multicast in computer networking.
 >In computer networking, Unicast, Broadcast, and Multicast are methods used for transmitting data packets to multiple destinations. Here’s how they differ:
 > - **Unicast:** Unicast sends data from one sender to one receiver, ensuring point-to-point communication. Like Sending an email to a specific recipient’s email address.
-> **Broadcast:** Broadcast sends data from one sender to all devices within a network, ensuring widespread delivery. Like Broadcasting a network status update to all computers in a LAN.
-> **Multicast:** Multicast sends data from one sender to a specific group of recipients, optimizing bandwidth usage.
-> **Example:** Like Streaming a live video feed to multiple users simultaneously over the internet.
+> - **Broadcast:** Broadcast sends data from one sender to all devices within a network, ensuring widespread delivery. Like Broadcasting a network status update to all computers in a LAN.
+> - **Multicast:** Multicast sends data from one sender to a specific group of recipients, optimizing bandwidth usage. Like Streaming a live video feed to multiple users simultaneously over the internet.
 >
 >- ![image](https://github.com/user-attachments/assets/4c3679be-0950-49cc-bae0-9d20bc41b5fd)
 
