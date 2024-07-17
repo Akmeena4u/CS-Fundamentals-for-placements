@@ -1,6 +1,26 @@
 
+### Table of Contents
 
-### Interview Question: Window Functions in SQL
+<!-- TOC_START -->
+| No. | Questions |
+| --- | --------- |
+| 1   | [Explain all about window functions in SQL, their syntax, use cases, and examples of types](#explain-all-about-window-functions-in-sql-their-syntax-use-cases-and-examples-of-types) |
+| 2   | [Explain the use of a CASE expression in SQL queries, with examples](#explain-the-use-of-a-case-expression-in-sql-queries-with-examples) |
+| 3   | [Explain what a Common Table Expression (CTE) is in SQL, with examples](#explain-what-a-common-table-expression-cte-is-in-sql-with-examples) |
+
+
+### Explain all about window functions in SQL, their syntax, use cases, and examples of types
+> Window functions in SQL are special functions that allow you to perform calculations across a set of table rows related to the current row. Unlike normal aggregate functions like SUM() or AVG(), window functions do not collapse rows into a single result. Instead, they keep each row separate and add useful information to each row without changing the overall result set. You can use window functions to calculate rankings, running totals, compare values with others, or get values from previous or next rows in a query. They're really handy for analyzing data in more complex ways without grouping rows together.
+
+#### Window Function Syntax:
+
+```sql
+SELECT <Col-names>,
+       <window_function>() OVER (
+           [PARTITION BY partition_expression]
+           [ORDER BY order_expression [ASC | DESC]]
+
+
 #### 1. Can you explain what window functions are in SQL, their syntax, and use cases, and provide examples of their types?
 >
 > Window functions in SQL are special functions that allow you to perform calculations across a set of table rows related to the current row. Unlike normal aggregate functions like `SUM()` or `AVG()`, window functions do not collapse rows into a single result. Instead, they keep each row separate and add useful information to each row without changing the overall result set. You can use window functions to calculate rankings, running totals, compare values with others, or get values from previous or next rows in a query. They're really handy for analyzing data in more complex ways without grouping rows together.
