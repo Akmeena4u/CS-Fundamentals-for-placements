@@ -7,7 +7,7 @@
 <!-- TOC_START -->
 | No. | Questions |
 | --- | --------- |
-| 1 | [What is SQL?](#1-what-is-sql) |
+| 1 | [What is SQL?](#what-is-sql) |
 | 2 | [What is an RDBMS?](#what-is-an-rdbms) |
 | 3 | [Differentiate between SQL and MySQL.](#differentiate-between-sql-and-mysql) |
 | 4 | [What are SQL data types used for?](#what-are-sql-data-types-used-for) |
@@ -19,13 +19,12 @@
 | 10 | [What are some key commands and techniques used for the Manipulation of database data in SQL?](#what-are-some-key-commands-and-techniques-used-for-the-manipulation-of-database-data-in-sql) |
 <!-- TOC_END -->
 
-Feel free to let me know if there's anything else you'd like to add or modify!
 
 
-1. **What is SQL?**
+### What is SQL?
    > SQL stands for Structured Query Language, which is used to access and manipulate data in relational databases. It provides a standard way of performing CRUD operations: Create, Read, Update, and Delete.
 
-2. **What is an RDBMS?**
+### What is an RDBMS?
    > An RDBMS (Relational Database Management System) is software that allows the creation, maintenance, and management of relational databases based on the relational model. It enables users to define, create, query, update, and administer databases.
    >  Examples of RDBMS include MySQL, Microsoft SQL Server, Oracle Database, IBM Db2, PostgreSQL, etc.
 
