@@ -1,4 +1,28 @@
 
+### Table of Contents
+
+<!-- TOC_START -->
+| No. | Questions |
+| --- | --------- |
+| 1 | [Explain the difference between programs and processes](#explain-the-difference-between-programs-and-processes) |
+| 2 | [How OS converts a program into a process](#how-os-converts-a-program-into-a-process) |
+| 3 | [What is the architecture of a process?](#what-is-the-architecture-of-a-process) |
+| 4 | [What is the purpose of registers in the PCB?](#what-is-the-purpose-of-registers-in-the-pcb) |
+| 5 | [Explain about Process Queues](#explain-about-process-queues) |
+| 6 | [What is a Dispatcher?](#what-is-a-dispatcher) |
+| 7 | [What is Swapping?](#what-is-swapping) |
+| 8 | [What role does the Medium Term Scheduler (MTS) play in Swapping?](#what-role-does-the-medium-term-scheduler-mts-play-in-swapping) |
+| 9 | [What is Context-Switching?](#what-is-context-switching) |
+| 10 | [What is an Orphan Process?](#what-is-an-orphan-process) |
+| 11 | [What is a Zombie Process?](#what-is-a-zombie-process) |
+| 12 | [Why do Zombie Processes occur?](#why-do-zombie-processes-occur) |
+| 13 | [What is CPU Scheduling in Operating Systems?](#what-is-cpu-scheduling-in-operating-systems) |
+| 14 | [What are the Types of Scheduling?](#what-are-the-types-of-scheduling) |
+| 15 | [Define all CPU Scheduling Metrics in OS?](#define-all-cpu-scheduling-metrics-in-os) |
+| 16 | [Explain all Scheduling Algorithms:](#explain-all-scheduling-algorithms) |
+
+<!-- TOC_END -->
+
 
 ### Explain the difference between programs and processes and Describe 
 >  program is compiled code that is ready to execute. this resides in secondary memory
