@@ -53,11 +53,37 @@
 ###  What are the three types of data transmission modes? Describe each mode with an example.
 > Data transmission modes are categorized into Simplex, Half Duplex, and Full Duplex.
 >
-> **Simplex:** In simplex mode, data flows in only one direction, allowing communication in a unidirectional manner. One device can only send data, and the other can only receive. For Example A radio broadcast where the receiver can only listen but cannot send signals back.
->
-> **Half Duplex:** Both devices can transmit and receive data, but not simultaneously. They take turns using the communication channel. For Example Walkie-talkies where one person talks while the other listens, and then they switch roles.
->
-> **Full Duplex:** Both devices can transmit and receive data simultaneously, allowing for two-way communication. For example Telephone conversations where both parties can speak and listen at the same time over the same line.
+> - **Simplex:** In simplex mode, data flows in only one direction, allowing communication in a unidirectional manner. One device can only send data, and the other can only receive. For Example A radio broadcast where the receiver can only listen but cannot send signals back.
+> - **Half Duplex:** Both devices can transmit and receive data, but not simultaneously. They take turns using the communication channel. For Example Walkie-talkies where one person talks while the other listens, and then they switch roles.
+> - **Full Duplex:** Both devices can transmit and receive data simultaneously, allowing for two-way communication. For example Telephone conversations where both parties can speak and listen at the same time over the same line.
 
 
+### Explain about all network topologies.
+>Network topologies refer to the physical or logical layout of connected devices in a computer network. Each topology defines how nodes (devices like computers, servers, printers) are interconnected and how data flows between them. Here are the main types of network topologies:
+> -**Mesh Topology:**
+> **Description:** Every device connects to every other device with dedicated point-to-point links, ensuring high redundancy.
+> **Advantages:** No traffic problems, robustness, privacy, and easy fault isolation.
+> **Disadvantages:** Difficult installation and expensive due to extensive cabling.
+>- **Star Topology:**
+> **Description:** Devices connect to a central hub, facilitating easy installation and management.
+> 
+> **Advantages:** Cost-effective, easy to install/reconfigure, and robust with fault isolation.
+> 
+> **Disadvantages:** Dependency on the central hub and potential for increased cabling.
+
+**Bus Topology:**
+> **Description:** Uses a single central cable (bus) to connect all devices, simplifying installation.
+> 
+> **Advantages:** Cost-effective, easy to install, and requires less cabling.
+> 
+> **Disadvantages:** Difficult fault isolation, challenging to add new devices, and single point of failure.
+
+**Ring Topology:**
+> **Description:** Each device connects to two neighbors, forming a closed loop where data circulates.
+> 
+> **Advantages:** Easy to install, fault isolation is simplified.
+> 
+> **Disadvantages:** A break in the ring can disable the entire network.
+
+These succinct answers should help in quickly understanding the key aspects of each physical network topology.
 
