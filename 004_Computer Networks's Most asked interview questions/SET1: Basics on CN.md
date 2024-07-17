@@ -61,7 +61,7 @@
 ### Explain about all network topologies.
 >Network topologies refer to the physical or logical layout of connected devices in a computer network. Each topology defines how nodes (devices like computers, servers, printers) are interconnected and how data flows between them. Here are the main types of network topologies:
 >
->- ![image](https://github.com/user-attachments/assets/fdd1c341-d166-4bd4-9383-d84e917d94cc)
+>- ![image](https://github.com/user-attachments/assets/ca36f8d3-203f-491b-90d9-cafd16f5d3c3)
 >
 > **Mesh Topology:**
 > - **Description:** Every device connects to every other device with dedicated point-to-point links, ensuring high redundancy.
@@ -83,4 +83,20 @@
 > - **Advantages:** Easy to install, fault isolation is simplified.
 > - **Disadvantages:** A break in the ring can disable the entire network.
 
+
+
+
+### What are the key differences between LAN, WAN, and MAN?
+> LAN (Local Area Network), WAN (Wide Area Network), and MAN (Metropolitan Area Network) are types of networks distinguished primarily by their geographical coverage, scale, and the types of services they support. Here are the key differences:
+**LAN (Local Area Network):**
+> LAN typically covers a small geographic area, such as a building or campus. Often privately owned, used for office or building-wide networking.
+> **Example:** A LAN can include computers within a single office floor or an entire building.
+>
+**WAN (Wide Area Network):** WAN spans a large geographic area, connecting multiple LANs and other networks.Encompasses networks across cities, states, or even countries.
+> **Example:** The network covering the entire state of Uttar Pradesh (UP) qualifies as a WAN.
+>
+**MAN (Metropolitan Area Network):**  MAN falls between LAN and WAN in size, covering a larger area than LAN but smaller than WAN. Typically encompasses a city or metropolitan area.
+> **Example:** The network infrastructure across Mumbai serves as a MAN.
+>
+> - ![image](https://github.com/user-attachments/assets/e1dc4337-fc4f-4764-84ba-932521dd13a3)
 
