@@ -1,6 +1,27 @@
 
 ### Interview Questions on SQL
 
+
+### Table of Contents
+
+<!-- TOC_START -->
+| No. | Questions |
+| --- | --------- |
+| 1 | [What is SQL?](#what-is-sql) |
+| 2 | [What is an RDBMS?](#what-is-an-rdbms) |
+| 3 | [Differentiate between SQL and MySQL.](#differentiate-between-sql-and-mysql) |
+| 4 | [What are SQL data types used for?](#what-are-sql-data-types-used-for) |
+| 5 | [Why are variable-length data types like VARCHAR preferred over fixed-length types like CHAR?](#why-are-variable-length-data-types-like-varchar-preferred-over-fixed-length-types-like-char) |
+| 6 | [Explain Types of SQL commands.](#explain-types-of-sql-commands) |
+| 7 | [What are some key commands and techniques used for managing database data in SQL?](#what-are-some-key-commands-and-techniques-used-for-managing-database-data-in-sql) |
+| 8 | [What are some key commands and techniques used for retrieving database data in SQL?](#what-are-some-key-commands-and-techniques-used-for-retrieving-database-data-in-sql) |
+| 9 | [What are some key commands and techniques used for the definition database data in SQL?](#what-are-some-key-commands-and-techniques-used-for-the-definition-database-data-in-sql) |
+| 10 | [What are some key commands and techniques used for the manipulation of database data in SQL?](#what-are-some-key-commands-and-techniques-used-for-the-manipulation-of-database-data-in-sql) |
+
+<!-- TOC_END -->
+
+Feel free to navigate directly to any question by clicking on the links above for detailed explanations.
+
 1. **What is SQL?**
    > SQL stands for Structured Query Language, which is used to access and manipulate data in relational databases. It provides a standard way of performing CRUD operations: Create, Read, Update, and Delete.
 
