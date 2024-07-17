@@ -7,7 +7,7 @@
 <!-- TOC_START -->
 | No. | Questions |
 | --- | --------- |
-| 1 | [What is SQL?](#what-is-sql) |
+| 1 | [What is SQL?](#1-what-is-sql) |
 | 2 | [What is an RDBMS?](#what-is-an-rdbms) |
 | 3 | [Differentiate between SQL and MySQL.](#differentiate-between-sql-and-mysql) |
 | 4 | [What are SQL data types used for?](#what-are-sql-data-types-used-for) |
