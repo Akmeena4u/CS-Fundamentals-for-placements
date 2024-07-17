@@ -219,6 +219,8 @@ his technique enhances security by monitoring and controlling data flow within p
 > 6. Updates the page table to indicate that the page is now in memory.
 > 7. Restarts the instruction that was interrupted by the page fault, allowing the process to continue execution as if the page had always been in memory.
 >    
+> - ![image](https://github.com/user-attachments/assets/9b811761-d646-42e2-b621-115240720687)
+>
 >   - ![image](https://github.com/user-attachments/assets/90631acd-4031-4078-9624-f638af431134)
 
 
