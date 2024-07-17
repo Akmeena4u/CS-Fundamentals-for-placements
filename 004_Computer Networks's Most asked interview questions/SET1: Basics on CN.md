@@ -60,6 +60,9 @@
 
 ### Explain about all network topologies.
 >Network topologies refer to the physical or logical layout of connected devices in a computer network. Each topology defines how nodes (devices like computers, servers, printers) are interconnected and how data flows between them. Here are the main types of network topologies:
+>
+>- ![image](https://github.com/user-attachments/assets/fdd1c341-d166-4bd4-9383-d84e917d94cc)
+>
 > **Mesh Topology:**
 > - **Description:** Every device connects to every other device with dedicated point-to-point links, ensuring high redundancy.
 > - **Advantages:** No traffic problems, robustness, privacy, and easy fault isolation.
@@ -69,10 +72,12 @@
 > - **Description:** Devices connect to a central hub, facilitating easy installation and management.
 > - **Advantages:** Cost-effective, easy to install/reconfigure, and robust with fault isolation.
 > - **Disadvantages:** Dependency on the central hub and potential for increased cabling.
+>   
 > **Bus Topology:**
 > - **Description:** Uses a single central cable (bus) to connect all devices, simplifying installation.
 > - **Advantages:** Cost-effective, easy to install, and requires less cabling.
 > - **Disadvantages:** Difficult fault isolation, challenging to add new devices, and single point of failure.
+>   
 > **Ring Topology:**
 > - **Description:** Each device connects to two neighbors, forming a closed loop where data circulates.
 > - **Advantages:** Easy to install, fault isolation is simplified.
