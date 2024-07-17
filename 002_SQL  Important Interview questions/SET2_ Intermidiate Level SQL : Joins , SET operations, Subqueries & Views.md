@@ -1,5 +1,4 @@
 
-Here is the table of contents for the provided SQL-related questions in the requested format:
 
 ### Table of Contents
 
