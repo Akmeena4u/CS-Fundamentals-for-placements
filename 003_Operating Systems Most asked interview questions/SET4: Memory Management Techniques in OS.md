@@ -221,7 +221,6 @@ his technique enhances security by monitoring and controlling data flow within p
 >    
 > - ![image](https://github.com/user-attachments/assets/9b811761-d646-42e2-b621-115240720687)
 >
->   - ![image](https://github.com/user-attachments/assets/90631acd-4031-4078-9624-f638af431134)
 
 
 
