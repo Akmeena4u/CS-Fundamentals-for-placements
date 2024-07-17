@@ -60,30 +60,22 @@
 
 ### Explain about all network topologies.
 >Network topologies refer to the physical or logical layout of connected devices in a computer network. Each topology defines how nodes (devices like computers, servers, printers) are interconnected and how data flows between them. Here are the main types of network topologies:
-> -**Mesh Topology:**
-> **Description:** Every device connects to every other device with dedicated point-to-point links, ensuring high redundancy.
-> **Advantages:** No traffic problems, robustness, privacy, and easy fault isolation.
-> **Disadvantages:** Difficult installation and expensive due to extensive cabling.
->- **Star Topology:**
-> **Description:** Devices connect to a central hub, facilitating easy installation and management.
-> 
-> **Advantages:** Cost-effective, easy to install/reconfigure, and robust with fault isolation.
-> 
-> **Disadvantages:** Dependency on the central hub and potential for increased cabling.
+> **Mesh Topology:**
+> - **Description:** Every device connects to every other device with dedicated point-to-point links, ensuring high redundancy.
+> - **Advantages:** No traffic problems, robustness, privacy, and easy fault isolation.
+> - **Disadvantages:** Difficult installation and expensive due to extensive cabling.
+>   
+> **Star Topology:**
+> - **Description:** Devices connect to a central hub, facilitating easy installation and management.
+> - **Advantages:** Cost-effective, easy to install/reconfigure, and robust with fault isolation.
+> - **Disadvantages:** Dependency on the central hub and potential for increased cabling.
+> **Bus Topology:**
+> - **Description:** Uses a single central cable (bus) to connect all devices, simplifying installation.
+> - **Advantages:** Cost-effective, easy to install, and requires less cabling.
+> - **Disadvantages:** Difficult fault isolation, challenging to add new devices, and single point of failure.
+> **Ring Topology:**
+> - **Description:** Each device connects to two neighbors, forming a closed loop where data circulates.
+> - **Advantages:** Easy to install, fault isolation is simplified.
+> - **Disadvantages:** A break in the ring can disable the entire network.
 
-**Bus Topology:**
-> **Description:** Uses a single central cable (bus) to connect all devices, simplifying installation.
-> 
-> **Advantages:** Cost-effective, easy to install, and requires less cabling.
-> 
-> **Disadvantages:** Difficult fault isolation, challenging to add new devices, and single point of failure.
-
-**Ring Topology:**
-> **Description:** Each device connects to two neighbors, forming a closed loop where data circulates.
-> 
-> **Advantages:** Easy to install, fault isolation is simplified.
-> 
-> **Disadvantages:** A break in the ring can disable the entire network.
-
-These succinct answers should help in quickly understanding the key aspects of each physical network topology.
 
