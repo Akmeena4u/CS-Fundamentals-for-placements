@@ -28,10 +28,10 @@
    > An RDBMS (Relational Database Management System) is software that allows the creation, maintenance, and management of relational databases based on the relational model. It enables users to define, create, query, update, and administer databases.
    >  Examples of RDBMS include MySQL, Microsoft SQL Server, Oracle Database, IBM Db2, PostgreSQL, etc.
 
-3. **Differentiate between SQL and MySQL.**
+### Differentiate between SQL and MySQL.
    > SQL is a standardized language used for querying and manipulating data in relational databases, whereas MySQL is an open-source Relational Database Management System (RDBMS) that uses SQL as its query language. MySQL not only implements SQL for data operations but also provides features for managing and administering databases.
 
-4. **What are SQL data types used for?**
+### What are SQL data types used for?
    > In SQL databases, data is stored in tables with columns that have specific data types. These data types define the kind of data that can be stored in each column, ensuring data integrity and efficient storage.
    > **Some common SQL data types and their usage.**
    > - **CHAR and VARCHAR:** Stores strings with fixed or variable lengths.
@@ -44,11 +44,11 @@
    > - **DATETIME**A date and time combination. Format: YYYY-MM-DD hh:mm:ss.
    > - **YEAR** A year in four-digit format.
 
-5. **Why are variable-length data types like VARCHAR preferred over fixed-length types like CHAR?**
+### Why are variable-length data types like VARCHAR preferred over fixed-length types like CHAR?
    > Variable-length data types like VARCHAR occupy storage space only equal to the actual data size stored, whereas fixed-length types like CHAR always use the defined length, which can lead to wastage of storage space.
 
 
-6. **Explain Types of SQL commands:**
+### Explain Types of SQL commands:
    > 
    > 1. DDL (data definition language): defining relation schema.
    >    1. CREATE: create table, DB, view.
@@ -76,7 +76,7 @@
    >    4. SAVEPOINT: checkout within the group of transactions in which to rollback
 
 
-7. **What are some key commands and techniques used for managing database data in SQL?**
+### What are some key commands and techniques used for managing database data in SQL?
    > - **Managing Databases (DDL):**
    >   1. `CREATE DATABASE IF NOT EXISTS db-name;` - Creates a new database if it doesn't already exist.
    >   2. `USE db-name;` - Switches to the specified database for executing subsequent commands.
@@ -84,7 +84,7 @@
    >   4. `SHOW DATABASES;` - Lists all databases on the server.
    >   5. `SHOW TABLES;` - Lists tables in the currently selected database.
 
-8. **What are some key commands and techniques used for Retrieving database data in SQL?**
+### What are some key commands and techniques used for Retrieving database data in SQL?
    > **DATA RETRIEVAL LANGUAGE (DRL):**
    > 
    > 1. **Syntax:**
@@ -136,7 +136,7 @@
    >     3. HAVING requires GROUP BY.
    > 
 
-9. **What are some key commands and techniques used for the definition database data in SQL?**
+### What are some key commands and techniques used for the definition database data in SQL?
    > **CONSTRAINTS (DDL):**
    > 
    > 1. **Primary Key:**
@@ -214,7 +214,8 @@
    >       ```
 
 
- 10. **What are some key commands and techniques used for the Manipulation of database data in SQL?** 
+### What are some key commands and techniques used for the Manipulation of database data in SQL?
+
       > **DATA MANIPULATION LANGUAGE (DML):**
       > 
       > 1. **INSERT:**
