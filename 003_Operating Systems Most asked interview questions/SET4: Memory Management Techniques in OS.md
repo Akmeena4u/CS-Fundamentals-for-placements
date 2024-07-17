@@ -1,38 +1,38 @@
+### Table of Contents
 
+<!-- TOC_START -->
+| No. | Questions |
+| --- | --------- |
+| 1 | [What is main memory (RAM)?](#what-is-main-memory-ram) |
+| 2 | [Why is memory management necessary in operating systems?](#why-is-memory-management-necessary-in-operating-systems) |
+| 3 | [What are the primary goals of memory management?](#what-are-the-primary-goals-of-memory-management) |
+| 4 | [What is the difference between logical and physical address space?](#what-is-the-difference-between-logical-and-physical-address-space) |
+| 5 | [Explain how the Memory Management Unit (MMU) facilitates address translation.](#explain-how-the-memory-management-unit-mmu-facilitates-address-translation) |
+| 6 | [What is the role of memory protection in operating systems, and what are some commonly used methods to achieve it?](#what-is-the-role-of-memory-protection-in-operating-systems-and-what-are-some-commonly-used-methods-to-achieve-it) |
+| 7 | [What are memory management techniques in operating systems?](#what-are-memory-management-techniques-in-operating-systems) |
+| 8 | [What is contiguous memory allocation, and what are its key characteristics?](#what-is-contiguous-memory-allocation-and-what-are-its-key-characteristics) |
+| 9 | [How does the operating system manage free space in memory, and what methods are used to allocate memory to processes?](#how-does-the-operating-system-manage-free-space-in-memory-and-what-methods-are-used-to-allocate-memory-to-processes) |
+| 10 | [What is non-contiguous memory allocation?](#what-is-non-contiguous-memory-allocation) |
+| 11 | [Explain how paging works in non-contiguous memory allocation.](#explain-how-paging-works-in-non-contiguous-memory-allocation) |
+| 12 | [What is a page table and what role does it play in paging?](#what-is-a-page-table-and-what-role-does-it-play-in-paging) |
+| 13 | [Why is paging considered slow, and what hardware support exists to speed up the process?](#why-is-paging-considered-slow-and-what-hardware-support-exists-to-speed-up-the-process) |
+| 14 | [What is the role of Address Space Identifiers (ASIDs) in the Translation Lookaside Buffer (TLB)?](#what-is-the-role-of-address-space-identifiers-asids-in-the-translation-lookaside-buffer-tlb) |
+| 15 | [What is segmentation and how does it differ from paging?](#what-is-segmentation-and-how-does-it-differ-from-paging) |
+| 16 | [What are the advantages of non-contiguous memory allocation?](#what-are-the-advantages-of-non-contiguous-memory-allocation) |
+| 17 | [Explain the concept of a segment table in segmentation.](#explain-the-concept-of-a-segment-table-in-segmentation) |
+| 18 | [Why might modern systems use both segmentation and paging?](#why-might-modern-systems-use-both-segmentation-and-paging) |
+| 19 | [What is virtual memory and why is it important?](#what-is-virtual-memory-and-why-is-it-important) |
+| 20 | [What are the advantages and disadvantages of virtual memory?](#what-are-the-advantages-and-disadvantages-of-virtual-memory) |
+| 21 | [What is the role of the valid-invalid bit in demand paging?](#what-is-the-role-of-the-valid-invalid-bit-in-demand-paging) |
+| 22 | [What is demand paging in virtual memory management?](#what-is-demand-paging-in-virtual-memory-management) |
+| 23 | [How does the operating system handle a page fault?](#how-does-the-operating-system-handle-a-page-fault) |
+| 24 | [Explain the concept of pure demand paging.](#explain-the-concept-of-pure-demand-paging) |
+| 25 | [What is the difference between a swapper and a pager in the context of virtual memory?](#what-is-the-difference-between-a-swapper-and-a-pager-in-the-context-of-virtual-memory) |
+| 26 | [What are page replacement algorithms in operating systems, and why are they important?](#what-are-page-replacement-algorithms-in-operating-systems-and-why-are-they-important) |
+| 27 | [What is thrashing in the context of operating systems, and how does it affect system performance?](#what-is-thrashing-in-the-context-of-operating-systems-and-how-does-it-affect-system-performance) |
 
+<!-- TOC_END -->
 
-* [What is main memory (RAM)?](#1.1-what-is-main-memory-ram)
-* [Why is memory management necessary in operating systems?](#1.2-why-is-memory-management-necessary-in-operating-systems)
-* [What are the primary goals of memory management?](#1.3-what-are-the-primary-goals-of-memory-management)
-* [What is the difference between logical and physical address space?](#1.4-what-is-the-difference-between-logical-and-physical-address-space)
-* [Explain how the Memory Management Unit (MMU) facilitates address translation.](#1.5-explain-how-the-memory-management-unit-mmu-facilitates-address-translation)
-* [What is the role of memory protection in operating systems, and what are some commonly used methods to achieve it?](#1.6-what-is-the-role-of-memory-protection-in-operating-systems-and-what-are-some-commonly-used-methods-to-achieve-it)
-* [What are memory management techniques in os?](#1.7-what-are-memory-management-techniques-in-os)
-  * [What is contiguous memory allocation, and what are its key characteristics?](#1.8-what-is-contiguous-memory-allocation-and-what-are-its-key-characteristics)
-    * [Fixed Partitioning](#1.8.1-fixed-partitioning)
-    * [Dynamic Partitioning](#1.8.2-dynamic-partitioning)
-  * [How does the operating system manage free space in memory, and what methods are used to allocate memory to processes?](#1.9-how-does-the-operating-system-manage-free-space-in-memory-and-what-methods-are-used-to-allocate-memory-to-processes)
-    * [Free Space Management](#1.9.1-free-space-management)
-    * [Methods of Memory Allocation](#1.9.2-methods-of-memory-allocation)
-        * [First Fit](#1.9.2.1-first-fit)
-        * [Next Fit](#1.9.2.2-next-fit)
-        * [Best Fit](#1.9.2.3-best-fit)
-        * [Worst Fit](#1.9.2.4-worst-fit)
-    * [Defragmentation/Compaction](#1.9.3-defragmentation-compaction)
-* [What is non-contiguous memory allocation?](#1.10-what-is-non-contiguous-memory-allocation)
-* [Explain how paging works in non-contiguous memory allocation.](#1.11-explain-how-paging-works-in-non-contiguous-memory-allocation)
-* [What is a page table and what role does it play in paging?](#1.12-what-is-a-page-table-and-what-role-does-it-play-in-paging)
-* [Why is paging considered slow, and what hardware support exists to speed up the process?](#1.13-why-is-paging-considered-slow-and-what-hardware-support-exists-to-speed-up-the-process)
-* [What is the role of Address Space Identifiers (ASIDs) in the Translation Lookaside Buffer (TLB)?](#1.14-what-is-the-role-of-address-space-identifiers-asids-in-the-translation-lookaside-buffer-tlb)
-* [What is segmentation and how does it differ from paging?](#1.15-what-is-segmentation-and-how-does-it-differ-from-paging)
-* [What are the advantages and disadvantages of non-contiguous memory allocation?](#1.16-what-are-the-advantages-and-disadvantages-of-non-contiguous-memory-allocation)
-* [Explain the concept of a segment table in segmentation.](#1.17-explain-the-concept-of-a-segment-table-in-segmentation)
-* [Why might modern systems use both segmentation and paging?](#1.18-why-might-modern-systems-use-both-segmentation-and-paging)
-
-## II. Virtual Memory
-
-* [What is virtual memory and why is it important?](#2.1-what-is-virtual-memory-and-why-is-it-important)
-* [What are the
 
 
 ### What is main memory (RAM)?
