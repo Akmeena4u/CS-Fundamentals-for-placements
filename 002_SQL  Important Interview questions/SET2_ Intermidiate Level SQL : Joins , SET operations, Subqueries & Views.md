@@ -1,5 +1,27 @@
 
-1. **Explain all about joins in SQL**
+Here is the table of contents for the provided SQL-related questions in the requested format:
+
+### Table of Contents
+
+<!-- TOC_START -->
+| No. | Questions |
+| --- | --------- |
+| 1 | [Explain all about joins in SQL](#explain-all-about-joins-in-sql) |
+| 2 | [Explain all about SET Operations in SQL](#explain-all-about-set-operations-in-sql) |
+| 3 | [Explain Join V/S SET?](#explain-join-vs-set) |
+| 4 | [What is a subquery and how does it differ from a join?](#what-is-a-subquery-and-how-does-it-differ-from-a-join) |
+| 5 | [What are the main clauses where subqueries can be used?](#what-are-the-main-clauses-where-subqueries-can-be-used) |
+| 6 | [How many types of subqueries are there in SQL based on the number of rows they return?](#how-many-types-of-subqueries-are-there-in-sql-based-on-the-number-of-rows-they-return) |
+| 7 | [What are the restrictions on subqueries in SQL?](#what-are-the-restrictions-on-subqueries-in-sql) |
+| 8 | [How can you use subqueries with the EXISTS operator?](#how-can-you-use-subqueries-with-the-exists-operator) |
+| 9 | [Write a query to find employees who earn more than the average salary of their department.](#write-a-query-to-find-employees-who-earn-more-than-the-average-salary-of-their-department) |
+| 10 | [What is the difference between a subquery and a join?](#what-is-the-difference-between-a-subquery-and-a-join) |
+| 11 | [Explain what MySQL views are and how they are used in database management](#explain-what-mysql-views-are-and-how-they-are-used-in-database-management) |
+
+
+
+
+### Explain all about joins in SQL
   
     > **JOINING TABLES:**
     > 
@@ -73,7 +95,7 @@
 
 
 ---
-2. **Explain all about SET Operations in SQL**
+### Explain all about SET Operations in SQL
      
     > **SET OPERATIONS:** These operations are useful for combining and comparing data from multiple tables in SQL queries.
     > 1. Used to combine results from multiple SELECT statements.
@@ -112,21 +134,20 @@
     >      SELECT id FROM table-1 LEFT JOIN table-2 USING(id) WHERE table-2.id IS NULL;
     >      ```
     
-3. **Explain Join V/S SET?**
+## Explain Join V/S SET?
 
    ![image](https://github.com/user-attachments/assets/356001dc-22d9-4a0b-8c59-bec14ff0006a)
 
 ---
 
 
-## Subqueries
 
-1. **What is a subquery and how does it differ from a join?**
+### What is a subquery and how does it differ from a join?
    > A subquery is a query nested within another query. It is used to return data that will be used in the main query as a condition to further restrict the data to be retrieved. Unlike joins, which combine columns from multiple tables, subqueries can be used to filter rows from a single table.
 
 
-2. **What are the main clauses where subqueries can be used?**
-     > Subqueries can be used in the following clauses:
+### What are the main clauses where subqueries can be used?
+   > Subqueries can be used in the following clauses:
    > 1. Inside a WHERE clause.
    >  > ```sql
    > SELECT * FROM table1 WHERE col1 IN (SELECT col1 FROM table1);
@@ -148,9 +169,9 @@
 
 
 
-3. **How many types of subqueries are there in SQL based on the number of rows they return?:**
-    > Subqueries in SQL can also be classified based on the number of rows they return. The main types are:
-
+### How many types of subqueries are there in SQL based on the number of rows they return?:
+   > Subqueries in SQL can also be classified based on the number of rows they return. The main types are:
+   >
    > 1. **Single-row Subquery:**
    > A single-row subquery returns only one row of results. It is typically used with comparison operators like `=`, `>`, `<`.
    > 
@@ -206,12 +227,12 @@
 
 
 
-4. **What are the restrictions on subqueries in SQL?**
+### What are the restrictions on subqueries in SQL?
    > - A subquery must be enclosed in parentheses.
    > - A subquery must appear on the right side of the comparison operator.
    > - In a WHERE or HAVING clause, a subquery cannot use the ORDER BY clause, but it can be used in subqueries within the FROM clause.
 
-5. **How can you use subqueries with the EXISTS operator?**
+### How can you use subqueries with the EXISTS operator?
    > The EXISTS operator is used to test for the existence of any record in a subquery. It returns true if the subquery returns one or more records.
    > ```sql
    > SELECT name
@@ -220,14 +241,14 @@
    > ```
 
 
-6. **Write a query to find employees who earn more than the average salary of their department.**
+### Write a query to find employees who earn more than the average salary of their department.
    > ```sql
    > SELECT name
    > FROM employees e
    > WHERE salary > (SELECT AVG(salary) FROM employees WHERE department_id = e.department_id);
    > ```
 
-7. **What is the difference between a subquery and a join?**
+### What is the difference between a subquery and a join?
    > A subquery is a query within another query, often used to return a single value or a list of values to be used in the main query. A join combines rows from two or more tables based on a related column between them, and it typically produces a result set with columns from both tables.
    > Here is the detailed difference between JOIN and Subquery in tabular form:
     
@@ -247,10 +268,9 @@
 
 ---
 
-## MySQL views:
 
 
-1. **Explain what MySQL views are and how they are used in database management.**
+### Explain what MySQL views are and how they are used in database management
     
     > 1. **Definition and Purpose**: MySQL views are virtual tables generated by queries. They do not store data themselves but instead display data from underlying tables or other views. Views are used to simplify complex queries, enforce data security through restricted access, and enhance data organization.
     >
