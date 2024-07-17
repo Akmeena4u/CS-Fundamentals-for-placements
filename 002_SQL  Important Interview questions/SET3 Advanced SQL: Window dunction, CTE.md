@@ -16,9 +16,9 @@
 
 ```sql
 SELECT <Col-names>,
-       <window_function>() OVER (
-           [PARTITION BY partition_expression]
-           [ORDER BY order_expression [ASC | DESC]]
+<window_function>() OVER (
+[PARTITION BY partition_expression]
+[ORDER BY order_expression [ASC | DESC]]
 
 
 #### 1. Can you explain what window functions are in SQL, their syntax, and use cases, and provide examples of their types?
