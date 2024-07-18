@@ -49,7 +49,8 @@
 > - **Example Protocols:** HTTP (Hypertext Transfer Protocol), FTP (File Transfer Protocol), SMTP (Simple Mail Transfer Protocol), DNS (Domain Name System).
 > 
 > Each layer of the OSI Model plays a crucial role in ensuring effective communication and interoperability between different systems and networks. Understanding these layers helps in designing, troubleshooting, and optimizing network architectures and protocols.
-> - ![image](https://github.com/user-attachments/assets/6c4af2cc-3bcf-4f3d-aa4c-c2b23aa30daf)
+> 
+> - ![image](https://github.com/user-attachments/assets/01f0aac4-93a3-47c2-98df-65d282283686)
 >
 > - ![image](https://github.com/user-attachments/assets/0e6bc0b1-8c12-420e-a423-88f37816693f)
 
