@@ -80,6 +80,7 @@
 | **Error Handling** | Error handling is built into Data Link and Transport layers | Error handling is built into protocols like TCP          |
 | **Connection Orientation** | Supports both connection-oriented (TCP) and connectionless (UDP) protocols at the Transport layer | TCP is connection-oriented, UDP is connectionless        |
 >
->- ![image](https://github.com/user-attachments/assets/f4559caa-bc0f-483b-82f1-36a706906a7e)
+>- ![image](https://github.com/user-attachments/assets/a8813e84-1389-4ea1-995d-b9d0270d1b54)
+
 
 
