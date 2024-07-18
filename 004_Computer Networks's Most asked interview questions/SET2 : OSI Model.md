@@ -50,13 +50,8 @@
 > 
 > Each layer of the OSI Model plays a crucial role in ensuring effective communication and interoperability between different systems and networks. Understanding these layers helps in designing, troubleshooting, and optimizing network architectures and protocols.
 > 
-> - ![image](https://github.com/user-attachments/assets/01f0aac4-93a3-47c2-98df-65d282283686)
->
 > - ![image](https://github.com/user-attachments/assets/0e6bc0b1-8c12-420e-a423-88f37816693f)
 >
-> - ![image](https://github.com/user-attachments/assets/12388f4c-2610-405e-baee-2530058e582d)
-
-
 
 
 ### Explain Data flows through the OSI model in a step-by-step process
@@ -67,3 +62,24 @@
 > Network Layer: Segments are packaged into packets and routed.
 > Data Link Layer: Packets are framed and sent to the next device.
 > Physical Layer: Frames are converted into bits and transmitted physically.
+
+
+
+### Describe a comparison between the OSI model and the TCP/IP model.
+
+| Parameters         | OSI Model                                                  | TCP/IP Model                                             |
+|--------------------|-------------------------------------------------------------|----------------------------------------------------------|
+| **Full Form**      | OSI stands for Open Systems Interconnection                 | TCP/IP stands for Transmission Control Protocol/Internet Protocol |
+| **Layers**         | It has 7 layers                                            | It has 4 layers                                           |
+| **Usage**          | It is less commonly used compared to TCP/IP                  | It is widely used, especially on the Internet            |
+| **Approach**       | It is a vertically approached model                         | It is a horizontally approached model                    |
+| **Delivery**       | Delivery of the package is guaranteed                      | Delivery of the package is not guaranteed                |
+| **Replacement**    | Replacement of tools and changes can be done easily         | Replacing tools is not as easy as in the OSI Model       |
+| **Reliability**    | It is generally considered less reliable                    | It is generally considered more reliable                 |
+| **Protocol Examples** | Not tied to specific protocols, but examples include HTTP (Application), SSL/TLS (Presentation), TCP (Transport), IP (Network), Ethernet (Data Link) | HTTP, FTP, TCP, UDP, IP, Ethernet                         |
+| **Error Handling** | Error handling is built into Data Link and Transport layers | Error handling is built into protocols like TCP          |
+| **Connection Orientation** | Supports both connection-oriented (TCP) and connectionless (UDP) protocols at the Transport layer | TCP is connection-oriented, UDP is connectionless        |
+>
+>- ![image](https://github.com/user-attachments/assets/f4559caa-bc0f-483b-82f1-36a706906a7e)
+
+
