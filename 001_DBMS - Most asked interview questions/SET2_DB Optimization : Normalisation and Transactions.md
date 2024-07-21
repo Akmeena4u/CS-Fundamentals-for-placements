@@ -107,7 +107,7 @@
 
 ### Explain the shadow-copy scheme in the context of ensuring atomicity and durability and also show drawbacks.
 > **Answer:** The shadow-copy scheme involves creating a complete copy of the database (shadow copy) before a transaction (T) updates the database. The transaction updates the new copy while leaving the original untouched. If the transaction fails, the new copy is deleted, ensuring atomicity. If the transaction succeeds, the db-pointer is updated to point to the new copy, ensuring durability. This way, either all updates are reflected or none, and changes are permanent once committed.
-> **Drawbacks:** The primary drawback of the shadow-copy scheme is inefficiency, as it requires copying the entire database for every transaction, which can be resource-intensive and time-consuming.
+> - **Drawbacks:** The primary drawback of the shadow-copy scheme is inefficiency, as it requires copying the entire database for every transaction, which can be resource-intensive and time-consuming.
 
 ### What is a Write-Ahead Log (WAL) based recovery in DBMS?
 > **Answer:** Log-based recovery involves maintaining a log of each transaction in stable storage. The log records all operations performed on the database, ensuring that the database can be recovered in the event of a failure. Logs are stored before the actual transaction is applied to the database, providing a reliable method to recover and ensure atomicity and durability.
