@@ -235,8 +235,8 @@
 
 > - Converting an ER Model into a Relational Model involves mapping entities, attributes, relationships, and constraints from the ER diagram into tables, columns, and keys in a relational database design. Following steps we can use for this transformation:
 > - **Strong entities->Tables:** Strong Entities in an ER Diagram are transformed into individual tables in the Relational Model. The entity name becomes the table name, attributes become columns, and the Primary Key (PK) of the entity serves as the table's Primary Key in the relational database.
-> - **Weak entities->Tables:** Weak Entities are represented as tables that include all their attributes. Additionally, the Primary Key of the corresponding Strong Entity is added as a Foreign Key (FK) in the weak entity's table to establish the relationship. The table's Primary Key is typically a composite key combining the FK and a partial discriminator key unique to the weak entity.
-> -**Attributes:**
+> - **Weak entities->Tables:** Weak Entities are represented as tables that include all their attributes. Additionally, the Primary Key of the corresponding Strong Entity is added as a Foreign Key (FK) in the weak entity's table to establish the relationship. The table's Primary Key is typically a composite key combining the FK and a partial discriminator key unique to the weak entity. 
+> - **Attributes:**
 >    - **Single-Valued Attributes-> Columns:** These are directly represented as columns in the tables of the Relational Model, corresponding to their attribute names.
 >    - **Composite Attributes(can be divided) -> Separate columns:** Each component of a composite attribute is represented as a separate column in the original relation, ensuring atomicity and avoiding nested attributes.
 >    - **Multi-valued attributes- >Seprate tabels:** Multivalued Attributes are transformed into separate tables named after the original attribute. These tables include columns for the entity's Primary Key (used as FK), and a column for each value of the multivalued attribute. The table's Primary Key is typically a composite key combining the FK and the name of the multivalued attribute.
