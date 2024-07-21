@@ -204,10 +204,10 @@
 > - **Candidate Key (CK):** minimum subset of super keys, which can uniquely identify each tuple. so basically It is a super key with no repeated attributes . CK value shouldn’t be NULL
 > - **Primary Key (PK):** A selected candidate key used to uniquely identify each tuple in a table. It is chosen based on simplicity and efficiency.
 > - **Alternate Key(AK):** All CK except PK.
-> **Foreign key:** A Foreign Key (FK) in the Relational Model is an attribute or set of attributes in one table that refers to the Primary Key in another table. It establishes relationships between tables by enforcing referential integrity, ensuring that values in the FK match values in the PK of the referenced table.
-> **Composite Key:** PK formed using at least 2 attributes.
-> **Compound Key:** PK which is formed using 2 FK.
-> **Surrogate Key:**Synthetic PK. it is Generated automatically by DB, usually an integer value. May be used as PK.
+> - **Foreign key:** A Foreign Key (FK) in the Relational Model is an attribute or set of attributes in one table that refers to the Primary Key in another table. It establishes relationships between tables by enforcing referential integrity, ensuring that values in the FK match values in the PK of the referenced table.
+> - **Composite Key:** PK formed using at least 2 attributes.
+> -  **Compound Key:** PK which is formed using 2 FK.
+> -  **Surrogate Key:**Synthetic PK. it is Generated automatically by DB, usually an integer value. May be used as PK.
 
 ### Describe Integrity Constraints in the Relational Model and their significance.
 
