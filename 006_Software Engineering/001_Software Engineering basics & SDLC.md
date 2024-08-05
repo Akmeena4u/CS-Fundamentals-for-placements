@@ -62,9 +62,12 @@ These attributes help ensure that software meets user needs, performs well, and 
 ---
 
 ### What is SDLC?
-**SDLC (Software Development Life Cycle)** is a systematic process for planning, creating, testing, and deploying software. It outlines the stages involved in developing a software product from initial concept to final release and maintenance. Here’s a brief overview of the typical phases in SDLC:
+- **SDLC (Software Development Life Cycle)** is a systematic process for planning, creating, testing, and deploying software. It outlines the stages involved in developing a software product from initial concept to final release and maintenance. Here’s a brief overview of the typical phases in SDLC:
+- ![image](https://github.com/user-attachments/assets/b6eddd88-6d8d-487c-9d91-8fb12f5dadd8)
+
 
 ### Phases of SDLC
+- ![image](https://github.com/user-attachments/assets/9131a45f-7464-4d64-a219-cbf72db0a3b5)
 
 1. **Requirement Gathering and Analysis**
    - Understand and document what the software needs to achieve. here we Meet with stakeholders, gather requirements, and analyze needs.
@@ -86,6 +89,7 @@ These attributes help ensure that software meets user needs, performs well, and 
 
 SDLC provides a structured framework to ensure the systematic development of software, enhancing project management, quality assurance, and overall effectiveness.
 
+---
 
 ### What are the diffrent SDLC Models ?
 Different SDLC (Software Development Life Cycle) models offer various approaches to software development, each with its own set of methodologies and processes. Here’s a summary of some common SDLC models:
@@ -95,36 +99,51 @@ Different SDLC (Software Development Life Cycle) models offer various approaches
 - **Phases**: Requirement Gathering, System Design, Implementation, Testing, Deployment, Maintenance.
 - **Pros**: Simple and easy to manage; clear milestones.
 - **Cons**: Inflexible to changes; late testing phase can lead to discovering issues late in development.
+- ![image](https://github.com/user-attachments/assets/57a81f35-3150-4a04-b0ce-3e2b2842ab8b)
+
+
 
 ### 2. **Agile Model**
 - **Description**: An iterative approach that focuses on delivering small, functional pieces of software in short cycles (sprints), allowing for flexibility and continuous feedback.
 - **Phases**: Planning, Iteration, Development, Testing, Review, Deployment.
 - **Pros**: High flexibility and adaptability; early delivery of valuable software.
 - **Cons**: Can be challenging to manage scope; requires frequent communication and collaboration.
+- ![image](https://github.com/user-attachments/assets/b330ee98-a4ee-409d-801f-4b538835d90c)
+
+
 
 ### 3. **V-Model (Validation and Verification)**
 - **Description**: An extension of the Waterfall model that emphasizes verification and validation at each stage of development, forming a V-shape with development and testing phases.
 - **Phases**: Requirement Analysis, System Design, Architecture Design, Implementation, Unit Testing, Integration Testing, System Testing, Acceptance Testing.
 - **Pros**: Clear and structured; early validation of requirements.
 - **Cons**: Inflexible to changes; testing is done late in the process.
+- ![image](https://github.com/user-attachments/assets/fc9c4867-2e21-443b-b192-150c579d0359)
+
+
 
 ### 4. **Spiral Model**
 - **Description**: A risk-driven model that combines iterative development with a focus on risk assessment and management.
 - **Phases**: Planning, Risk Analysis, Engineering, Testing, Evaluation.
 - **Pros**: Focuses on risk management; iterative approach allows for gradual development.
 - **Cons**: Can be complex to manage; requires frequent evaluation and adjustment.
+- ![image](https://github.com/user-attachments/assets/608bef8a-2343-441c-88d4-bc2920abfcd9)
+
 
 ### 5. **Iterative Model**
 - **Description**: An incremental approach where software is developed in repeated cycles (iterations) and refined through feedback and testing.
 - **Phases**: Planning, Design, Development, Testing, Review, Deployment.
 - **Pros**: Allows for incremental improvements; early delivery of partial systems.
 - **Cons**: Can lead to scope creep; iterative cycles require careful management.
+- ![image](https://github.com/user-attachments/assets/914d196e-9af5-4d2f-8fc0-ee0c52e3f607)
+
 
 ### 6. **Incremental Model**
 - **Description**: Software is developed and delivered in increments or modules, each adding more functionality to the existing system.
 - **Phases**: Planning, Design, Development, Testing, Deployment (for each increment).
 - **Pros**: Allows partial implementation; easier to manage and test.
 - **Cons**: Integration between increments can be complex; may lead to incomplete initial features.
+- ![image](https://github.com/user-attachments/assets/43ae4b34-85ec-4b48-82e9-7fc70fd33ee1)
+
 
 ### 7. **RAD Model (Rapid Application Development)**
 - **Description**: Emphasizes rapid prototyping and iterative development with active user involvement.
@@ -145,3 +164,27 @@ Different SDLC (Software Development Life Cycle) models offer various approaches
 - **Cons**: High risk of failure; issues are often discovered late in the process.
 
 Each SDLC model has its strengths and weaknesses, and the choice of model depends on factors such as project size, complexity, risk, and customer requirements.
+
+
+---
+
+### What do you mean by Unified process in  Software engineering?
+
+### The Unified Process: Key Phases
+
+The Unified Process (UP) is a structured approach to software development with four phases:
+
+### 1. Inception Phase
+- It Defines project scope and feasibility. As a result, it delivers the Vision Document, Initial Use Case Model, Project Plan.
+
+### 2. Elaboration Phase
+- It Refines requirements and establishes architecture. As a result, it delivers the Detailed Use Case Model, Software Architecture Document, Prototype.
+
+### 3. Construction Phase
+- In this, we Incrementally build the system. As a result, it gives Working Software Increments, Updated Models, User Documentation.
+
+### 4. Transition Phase
+- Here we Deploy and transition to production. As a result it delivers the Final Product Release, Deployment Plan, Training Materials.
+
+### Summary
+The Unified Process ensures systematic development through iterative phases, resulting in high-quality software.
