@@ -367,7 +367,7 @@ Each method has its strengths and is chosen based on project needs and available
 ---
 
 
-Can you explain the different levels and types of the COCOMO (Constructive Cost Model) estimation model—Basic, Intermediate, and Complete, along with the project types like Organic, Semi-Detached, and Embedded? How do the equations for effort and time estimation differ across these levels and types, and what are the trade-offs associated with each?
+### Can you explain the different levels and types of the COCOMO (Constructive Cost Model) estimation model—Basic, Intermediate, and Complete, along with the project types like Organic, Semi-Detached, and Embedded? How do the equations for effort and time estimation differ across these levels and types, and what are the trade-offs associated with each?
 
 The COCOMO model provides estimates for effort and time based on project size, complexity, and type. Here's a detailed overview:
 
@@ -418,7 +418,8 @@ Basic COCOMO is quick and simple, Intermediate adds detailed factors for better 
 
 ---
 
-Can you explain the importance of software testing and the key types of testing—Functional Testing and Non-Functional Testing? How do these types differ in their objectives, techniques, and benefits, and what are the trade-offs associated with each?
+
+### Can you explain the importance of software testing and the key types of testing—Functional Testing and Non-Functional Testing? How do these types differ in their objectives, techniques, and benefits, and what are the trade-offs associated with each?
 
 **Answer:**
 
