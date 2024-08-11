@@ -17,18 +17,18 @@
 | 12 | [Can you explain the different levels and types of the COCOMO (Constructive Cost Model) estimation model—Basic, Intermediate, and Complete, along with the project types like Organic, Semi-Detached, and Embedded? How do the equations for effort and time estimation differ across these levels and types, and what are the trade-offs associated with each?](#can-you-explain-the-different-levels-and-types-of-the-cocomo-constructive-cost-model-estimation-modelbasic-intermediate-and-complete-along-with-the-project-types-like-organic-semi-detached-and-embedded-how-do-the-equations-for-effort-and-time-estimation-differ-across-these-levels-and-types-and-what-are-the-trade-offs-associated-with-each) |
 | 13 | [Can you explain the importance of software testing and the key types of testing—Functional Testing and Non-Functional Testing? How do these types differ in their objectives, techniques, and benefits, and what are the trade-offs associated with each?](#can-you-explain-the-importance-of-software-testing-and-the-key-types-of-testingfunctional-testing-and-non-functional-testing-how-do-these-types-differ-in-their-objectives-techniques-and-benefits-and-what-are-the-trade-offs-associated-with-each) |
 | 14 | [What is White Box Testing and how does it differ from other testing methodologies?](#what-is-white-box-testing-and-how-does-it-differ-from-other-testing-methodologies) |
-| 15 | [What are the key techniques used in White Box Testing, and what are its main advantages and challenges?](#what-are-the-key-techniques-used-in-white-box-testing-and-what-are-its-main-advantages-and-challenges) |
-| 16 | [What is Black Box Testing and how does it differ from White Box Testing?](#what-is-black-box-testing-and-how-does-it-differ-from-white-box-testing) |
-| 17 | [What are the primary techniques used in Black Box Testing, and what are its main advantages and limitations?](#what-are-the-primary-techniques-used-in-black-box-testing-and-what-are-its-main-advantages-and-limitations) |
-| 18 | [What is software maintenance and what are the different types of maintenance activities?](#what-is-software-maintenance-and-what-are-the-different-types-of-maintenance-activities) |
-| 19 | [What are the key challenges associated with software maintenance, and how can they be addressed?](#what-are-the-key-challenges-associated-with-software-maintenance-and-how-can-they-be-addressed) |
-| 20 | [What is software reengineering and discuss a scenario where you had to apply reengineering principles to an existing software system?](#what-is-software-reengineering-and-discuss-a-scenario-where-you-had-to-apply-reengineering-principles-to-an-existing-software-system) |
-| 21 | [What is the Critical Path Method (CPM) in project management and how is it used to determine the project's timeline?](#what-is-the-critical-path-method-cpm-in-project-management-and-how-is-it-used-to-determine-the-projects-timeline) |
-| 22 | [How do you calculate the critical path and what are the key steps and factors involved in this calculation?](#how-do-you-calculate-the-critical-path-and-what-are-the-key-steps-and-factors-involved-in-this-calculation) |
-| 23 | [What is regression testing and why is it important?](#what-is-regression-testing-and-why-is-it-important) |
-| 24 | [How do you typically approach regression testing and what are some common challenges you might face?](#how-do-you-typically-approach-regression-testing-and-what-are-some-common-challenges-you-might-face) |
-| 25 | [What does risk management in software engineering involve and why is it crucial for project success?](#what-does-risk-management-in-software-engineering-involve-and-why-is-it-crucial-for-project-success) |
-| 26 | [What are the key steps in the risk management process and what common risks might you encounter in software projects?](#what-are-the-key-steps-in-the-risk-management-process-and-what-common-risks-might-you-encounter-in-software-projects) |
+
+| 15 | [What is Black Box Testing and how does it differ from White Box Testing?](#what-is-black-box-testing-and-how-does-it-differ-from-white-box-testing) |
+
+| 16 | [What is software maintenance and what are the different types of maintenance activities?](#what-is-software-maintenance-and-what-are-the-different-types-of-maintenance-activities) |
+
+| 17 | [What is software reengineering and discuss a scenario where you had to apply reengineering principles to an existing software system?](#what-is-software-reengineering-and-discuss-a-scenario-where-you-had-to-apply-reengineering-principles-to-an-existing-software-system) |
+| 18 | [What is the Critical Path Method (CPM) in project management and how is it used to determine the project's timeline?](#what-is-the-critical-path-method-cpm-in-project-management-and-how-is-it-used-to-determine-the-projects-timeline) |
+
+| 19 | [What is regression testing and why is it important?](#what-is-regression-testing-and-why-is-it-important) |
+
+| 20 | [What does risk management in software engineering involve and why is it crucial for project success?](#what-does-risk-management-in-software-engineering-involve-and-why-is-it-crucial-for-project-success) |
+
 <!-- TOC_END -->
 
 
