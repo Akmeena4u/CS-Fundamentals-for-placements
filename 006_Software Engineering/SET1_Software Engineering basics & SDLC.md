@@ -107,7 +107,7 @@ SDLC provides a structured framework to ensure the systematic development of sof
 
 ---
 
-### What are the diffrent SDLC Models ?
+### What are the different SDLC Models?
 Different SDLC (Software Development Life Cycle) models offer various approaches to software development, each with its own set of methodologies and processes. Here’s a summary of some common SDLC models:
 
 ### 1. **Waterfall Model**
@@ -184,7 +184,9 @@ Each SDLC model has its strengths and weaknesses, and the choice of model depend
 
 ---
 
-### What do you mean by Unified process in  Software engineering?
+
+
+### What do you mean by Unified Process in Software Engineering?
 
 ### The Unified Process: Key Phases
 
