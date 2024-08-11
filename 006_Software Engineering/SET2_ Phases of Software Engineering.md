@@ -207,6 +207,8 @@ Requirement reviews are essential for ensuring that the project starts on a soli
 
 ### What is the Capability Maturity Model (CMM), and why is it important in software development? Can you explain its main levels and how they help improve software processes?
 
+
+
 **Answer:**
 
 "The Capability Maturity Model (CMM) is a framework used to assess and improve the maturity of software development processes. It’s important because it provides a structured approach for organizations to evaluate and enhance their process capabilities, leading to better quality software and more predictable outcomes.
@@ -222,6 +224,8 @@ Requirement reviews are essential for ensuring that the project starts on a soli
 Each level builds on the previous one, helping organizations progressively improve their software processes and achieve higher quality and efficiency.
 
 ---
+
+
 
 
 ### Can you explain the different levels of software design, such as interface design, architectural design, and detailed design, and how each contributes to the overall development process?
@@ -295,7 +299,8 @@ Good software design aims for high cohesion and low coupling, resulting in modul
 ---
 
 
-### Can you explain the top-down and bottom-up approaches to software design, and describe how they differ? What are the advantages and disadvantages of each approach?
+
+### Explain the top-down and bottom-up approaches to software design, and describe how they differ. What are the advantages and disadvantages of each approach?
 
 **Answer:**
 
