@@ -354,7 +354,6 @@ Each method has its strengths and limitations, and the choice of method often de
 ---
 
 ### Can you briefly explain the empirical, heuristic, and analytical estimation techniques in software engineering, and highlight their key advantages and disadvantages?
-
 **Answer:**
 1. **Empirical Estimation**: Uses historical data from similar projects to make predictions. **Advantages**: Data-driven and often accurate if projects are comparable. **Disadvantages**: Less effective if projects differ significantly or if data is scarce.
 
