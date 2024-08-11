@@ -339,15 +339,6 @@ The COCOMO model provides estimates for effort and time based on project size, c
    - **Description**: Offers a straightforward estimation using minimal parameters, suitable for early project planning.
    - **Effort Equation**: \( \text{Effort} = a \times (\text{KLOC})^b \)
      - Where \( a \) and \( b \) are constants depending on project type.
-     - **Formula:**
-- **Effort** (person-months):
-  \[
-  \text{Effort} = 2.4 \times (KLOC)^{1.05}
-  \]
-- **Time** (months):
-  \[
-  \text{Time} = 2.5 \times (\text{Effort})^{0.38}
-  \]
    - **Time Equation**: \( \text{Time} = c \times (\text{Effort})^d \)
      - Where \( c \) and \( d \) are constants to estimate the duration.
    - **Types**:
@@ -382,6 +373,28 @@ The COCOMO model provides estimates for effort and time based on project size, c
    - **Advantages**: Provides the most accurate estimates by considering all factors.
    - **Disadvantages**: Most complex and data-intensive, requires extensive project details.
 
+
+Here's how you can present the COCOMO model details in a tabular format for a Markdown file:
+
+```markdown
+## COCOMO Model: Basic, Intermediate, and Complete Levels
+
+The COCOMO (Constructive Cost Model) is used for estimating software development effort and time. Below is a summary of the Basic, Intermediate, and Complete levels.
+
+| **Level**      | **Effort Formula**                                     | **Time Formula**                                      | **Description**                                            |
+|----------------|--------------------------------------------------------|-------------------------------------------------------|------------------------------------------------------------|
+| **Basic**      | \(\text{Effort} = 2.4 \times (KLOC)^{1.05}\)          | \(\text{Time} = 2.5 \times (\text{Effort})^{0.38}\)  | Estimates effort and time based on Kilo Lines of Code (KLOC). Suitable for initial estimates. |
+| **Intermediate**| \(\text{Effort} = 2.5 \times (KLOC)^{1.12} \times \text{EM}\) | \(\text{Time} = 2.5 \times (\text{Effort})^{0.35}\)  | Refines estimates using cost drivers. `EM` is the Effort Multiplier derived from these cost drivers. |
+| **Complete**   | \(\text{Effort} = 2.5 \times (KLOC)^{1.12} \times \text{EM} \times \text{TM}\) | \(\text{Time} = 2.5 \times (\text{Effort})^{0.35} \times \text{TM}\) | Provides detailed estimates with additional factors. `TM` is the Time Multiplier that adjusts the time estimate. |
+
+### Summary
+
+- **Basic COCOMO**: Provides initial, simple estimates.
+- **Intermediate COCOMO**: Refines estimates with additional cost drivers.
+- **Complete COCOMO**: Offers detailed estimates considering more factors.
+```
+
+This table format clearly distinguishes between the different levels of the COCOMO model, their formulas, and their descriptions.
 Basic COCOMO is quick and simple, Intermediate adds detailed factors for better accuracy, and Complete provides the most accurate estimates with detailed adjustments for project phases and constraints. The choice depends on the project's complexity and the level of detail needed.
 
 ---
