@@ -32,7 +32,7 @@
 <!-- TOC_END -->
 
 
-### Whar are the Steps to Requirement Analysis and Specification?
+### What are the Steps to Requirement Analysis and Specification?
 
 - Requirement Analysis and Specification are critical stages in the Software Development Life Cycle (SDLC) that ensure the final product meets the needs of users and stakeholders.
 
@@ -77,7 +77,7 @@ These steps ensure that the requirements are accurately gathered, thoroughly ana
 
 ---
 
-### Explain Requirement Analysis using Different tools.
+### Explain Requirement Analysis using Different Tools
 
 Requirement analysis can be explained using various tools and techniques like flow diagrams, Data Flow Diagrams (DFDs), data dictionaries, and decision tables. Here’s how each of these tools helps in the requirement analysis process:
 
@@ -161,6 +161,7 @@ A decision table for loan approval based on credit score and income:
 These tools together provide a comprehensive view of the requirements, helping to ensure that the system is designed and implemented according to the defined needs and constraints.
 
 ---
+
 
 
 
