@@ -18,16 +18,11 @@
 | 13 | [Can you explain the importance of software testing and the key types of testing—Functional Testing and Non-Functional Testing? How do these types differ in their objectives, techniques, and benefits, and what are the trade-offs associated with each?](#can-you-explain-the-importance-of-software-testing-and-the-key-types-of-testingfunctional-testing-and-non-functional-testing-how-do-these-types-differ-in-their-objectives-techniques-and-benefits-and-what-are-the-trade-offs-associated-with-each)|
 | 14 | [What is White Box Testing and how does it differ from other testing methodologies?](#what-is-white-box-testing-and-how-does-it-differ-from-other-testing-methodologies) |
 | 15 | [What is Black Box Testing and how does it differ from White Box Testing?](#what-is-black-box-testing-and-how-does-it-differ-from-white-box-testing) |
-
 | 16 | [What is software maintenance and what are the different types of maintenance activities?](#what-is-software-maintenance-and-what-are-the-different-types-of-maintenance-activities) |
-
 | 17 | [What is software reengineering and discuss a scenario where you had to apply reengineering principles to an existing software system?](#what-is-software-reengineering-and-discuss-a-scenario-where-you-had-to-apply-reengineering-principles-to-an-existing-software-system) |
 | 18 | [What is the Critical Path Method (CPM) in project management and how is it used to determine the project's timeline?](#what-is-the-critical-path-method-cpm-in-project-management-and-how-is-it-used-to-determine-the-projects-timeline) |
-
 | 19 | [What is regression testing and why is it important?](#what-is-regression-testing-and-why-is-it-important) |
-
 | 20 | [What does risk management in software engineering involve and why is it crucial for project success?](#what-does-risk-management-in-software-engineering-involve-and-why-is-it-crucial-for-project-success) |
-
 <!-- TOC_END -->
 
 
