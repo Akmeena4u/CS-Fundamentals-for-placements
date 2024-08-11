@@ -339,6 +339,15 @@ The COCOMO model provides estimates for effort and time based on project size, c
    - **Description**: Offers a straightforward estimation using minimal parameters, suitable for early project planning.
    - **Effort Equation**: \( \text{Effort} = a \times (\text{KLOC})^b \)
      - Where \( a \) and \( b \) are constants depending on project type.
+     - **Formula:**
+- **Effort** (person-months):
+  \[
+  \text{Effort} = 2.4 \times (KLOC)^{1.05}
+  \]
+- **Time** (months):
+  \[
+  \text{Time} = 2.5 \times (\text{Effort})^{0.38}
+  \]
    - **Time Equation**: \( \text{Time} = c \times (\text{Effort})^d \)
      - Where \( c \) and \( d \) are constants to estimate the duration.
    - **Types**:
