@@ -331,7 +331,7 @@
 > - ![image](https://github.com/user-attachments/assets/1e54d81e-7758-4612-a561-369d9bfca92d)
 > 
 > - **Decoder**
-> -![image](https://github.com/user-attachments/assets/09fb8c49-6722-47d1-8efe-45b6be146cb3)
+> - ![image](https://github.com/user-attachments/assets/09fb8c49-6722-47d1-8efe-45b6be146cb3)
 > 
 > 
 > **Summary:**
