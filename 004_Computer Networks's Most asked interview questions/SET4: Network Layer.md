@@ -212,21 +212,6 @@
 
 ---
 
-### Explain IPv4 Routing methods
-> 
-> Routing is the process of directing data packets from their source to their destination across multiple networks. Routers use the following methods:
-> 
-> - **Static Routing**: Routes are manually configured and do not change unless manually updated.
-> - **Dynamic Routing**: Routes are automatically adjusted based on network conditions, using protocols such as:
->   - **RIP (Routing Information Protocol)**
->   - **OSPF (Open Shortest Path First)**
->   - **BGP (Border Gateway Protocol)**
-> 
-
-
-
----
-
 ### What do you mean by Subnetting?
 > 
 > **Subnetting** is the process of dividing a larger network into smaller, more manageable sub-networks or **subnets**. It optimizes network performance and improves security by creating smaller broadcast domains and efficiently using IP address space.
