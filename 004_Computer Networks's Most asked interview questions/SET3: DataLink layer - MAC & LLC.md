@@ -453,3 +453,22 @@
 > - **Suitability:** Token Bus was suited for industrial applications, Token Ring for environments requiring collision-free communication, and FDDI for high-speed, high-reliability applications. All three have largely been replaced by more advanced Ethernet technologies.
 > 
 > This comparison highlights the evolution of networking technologies and how newer standards have addressed the limitations of older ones.
+
+
+
+
+### What is the Spanning Tree Protocol (STP), and how does it prevent network loops and determine the best path in a network?
+> 
+> **Spanning Tree Protocol (STP)** is used to prevent network loops in Ethernet networks by ensuring a loop-free topology. Here’s a brief overview:
+> 
+> 1. **Purpose:** STP prevents broadcast storms and multiple frame copies caused by network loops while allowing redundancy.
+> 
+> 2. **How It Works:**
+>    - **Root Bridge:** STP elects a Root Bridge, which is the central switch with the lowest Bridge ID.
+>    - **Path Cost Calculation:** Each switch calculates the shortest path to the Root Bridge based on link costs.
+>    - **Port Roles:** Ports are assigned roles like Root Port (shortest path to Root Bridge) and Designated Port (best path for a network segment). Ports not part of the best path are blocked to prevent loops.
+>    - **Port States:** Ports can be in Blocking, Listening, Learning, or Forwarding states.
+> 
+> 3. **Determining Best Path:** STP uses path costs to select the most efficient route to the Root Bridge, ensuring only the best paths are active while blocking others to avoid loops.
+> 
+> **Key Point:** STP is crucial for maintaining network stability and redundancy, with enhanced versions like RSTP offering faster convergence.
