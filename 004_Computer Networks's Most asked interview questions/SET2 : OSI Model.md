@@ -1,4 +1,12 @@
-
+<!-- TOC_START -->
+| No. | Questions |
+| --- | --------- |
+| 1 | [What is the OSI model in computer networking](#what-is-osi-model-in-computer-networking) |
+| 2 | [Explain 7 layers of the OSI Model](#explain-7-layers-of-osi-model) |
+| 3 | [Explain data flows through the OSI model in a step-by-step process](#explain-data-flows-through-the-osi-model-in-a-step-by-step-process) |
+| 4 | [Describe a comparison between the OSI model and the TCP/IP model](#describe-a-comparison-between-the-osi-model-and-the-tcpip-model) |
+| 5 | [What is switching in computer networking, and why is it important?](#what-is-switching-in-computer-networking-and-why-is-it-important) |
+<!-- TOC_END -->
 
 ### What is OSI model in computer networking.
 >- The OSI Model (Open Systems Interconnection Model) is a conceptual framework used to understand and describe how different networking systems communicate with each other. Created by the International Organization for Standardization (ISO) in 1984, the OSI Model divides the communication process into seven distinct layers. Each layer has a specific role, ensuring that different technologies and products can work together smoothly.
