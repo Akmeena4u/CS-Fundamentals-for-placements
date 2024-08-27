@@ -1,3 +1,20 @@
+Certainly! Here's the table of contents formatted as requested:
+
+<!-- TOC_START -->
+| No. | Questions |
+| --- | --------- |
+| 1 | [What is Computer Networks](#what-is-computer-networks) |
+| 2 | [What are the Goals of Computer Networks?](#what-are-the-goals-of-computer-networks) |
+| 3 | [What is the difference between the Internet and the Web?](#what-is-the-difference-between-the-internet-and-the-web) |
+| 4 | [What are the five components of a data communication system, and how do they contribute to effective communication?](#what-are-the-five-components-of-a-data-communication-system-and-how-do-they-contribute-to-effective-communication) |
+| 5 | [What are the two broad categories of transmission media used in data communication? Describe each category briefly.](#what-are-the-two-broad-categories-of-transmission-media-used-in-data-communication-describe-each-category-briefly) |
+| 6 | [Differentiate between Radio Waves, Microwaves, and Infrared Waves in terms of frequency range, penetration capabilities, and security.](#differentiate-between-radio-waves-microwaves-and-infrared-waves-in-terms-of-frequency-range-penetration-capabilities-and-security) |
+| 7 | [Give me real-world uses of Radio, Microwaves, and Infrared Waves.](#give-me-real-world-uses-of-radio-microwaves-and-infrared-waves) |
+| 8 | [What are the three types of data transmission modes? Describe each mode with an example.](#what-are-the-three-types-of-data-transmission-modes-describe-each-mode-with-an-example) |
+| 9 | [Explain about all network topologies.](#explain-about-all-network-topologies) |
+| 10 | [What are the key differences between LAN, WAN, and MAN?](#what-are-the-key-differences-between-lan-wan-and-man) |
+| 11 | [Differentiate between Unicast, Broadcast, and Multicast in computer networking.](#differentiate-between-unicast-broadcast-and-multicast-in-computer-networking) |
+<!-- TOC_END -->
 
 
 ### What is Computer Networks
