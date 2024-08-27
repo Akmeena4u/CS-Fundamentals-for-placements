@@ -13,6 +13,16 @@
 | 9 | [Describe the Go-Back-N ARQ protocol and explain how it improves upon Stop-and-Wait ARQ. Include details on the sliding window concept, sequence numbers, acknowledgment process, and how the window size and sequence number calculation contribute to its efficiency.](#describe-the-go-back-n-arq-protocol-and-explain-how-it-improves-upon-stop-and-wait-arq-include-details-on-the-sliding-window-concept-sequence-numbers-acknowledgment-process-and-how-the-window-size-and-sequence-number-calculation-contribute-to-its-efficiency) |
 | 10 | [Explain the Selective Repeat ARQ protocol and how it differs from Go-Back-N ARQ. Discuss how it handles frame retransmissions, the management of data windows, and the role of timers in this protocol.](#explain-the-selective-repeat-arq-protocol-and-how-it-differs-from-go-back-n-arq-discuss-how-it-handles-frame-retransmissions-the-management-of-data-windows-and-the-role-of-timers-in-this-protocol) |
 | 11 | [What is Piggybacking?](#what-is-piggybacking) |
+| 12 | [Differences between Single-Bit Errors and Burst Errors in Data Transmission](#differences-between-single-bit-errors-and-burst-errors-in-data-transmission) |
+| 13 | [Hamming Distance: Definition, Calculation, and Example](#hamming-distance-definition-calculation-and-example) |
+| 14 | [Simple Parity-Check Code: Purpose, Operation, and Limitations](#simple-parity-check-code-purpose-operation-and-limitations) |
+| 15 | [Two-Dimensional Parity-Check Method: Operation and Limitations](#two-dimensional-parity-check-method-operation-and-limitations) |
+| 16 | [Hamming Codes: Encoding, Error Detection, and Correction](#hamming-codes-encoding-error-detection-and-correction) |
+| 17 | [Checksum Technique: Calculation, Verification, and Error Detection](#checksum-technique-calculation-verification-and-error-detection) |
+| 18 | [Cyclic Redundancy Check (CRC): Calculation, Verification, and Error Detection](#cyclic-redundancy-check-crc-calculation-verification-and-error-detection) |
+| 19 | [Comprehensive Overview of Ethernet: History, Components, and Applications](#comprehensive-overview-of-ethernet-history-components-and-applications) |
+| 20 | [Comparison of IEEE 802.4 (Token Bus), IEEE 802.5 (Token Ring), and FDDI](#comparison-of-ieee-8024-token-bus-ieee-8025-token-ring-and-fddi) |
+| 21 | [Spanning Tree Protocol (STP): Function, Operation, and Path Determination](#spanning-tree-protocol-stp-function-operation-and-path-determination) |
 <!-- TOC_END -->
 
 ### What are the two sublayers of the data-link layer as defined by the IEEE?
@@ -79,7 +89,7 @@
 > Bit Stuffing is widely used in protocols such as **HDLC (High-Level Data Link Control)** and **CAN (Controller Area Network)**, where efficient and reliable data transmission is critical, and the communication is often in binary form.
 
 
-### Explain MAC layers protocols.
+### Explain MAC layer protocols.
 > - The Medium Access Control (MAC) layer is a sublayer of the Data Link Layer (Layer 2) in the OSI model
 > - When nodes or stations are connected and use a common link, we need a multiple-access protocol to coordinate access to the link. Many protocols have been devised to handle access to a shared link.
 > - ![image](https://github.com/user-attachments/assets/6ebe328c-e219-4e4a-af28-9b7fea54f1b9)
@@ -130,7 +140,7 @@
 
 
 
-### Explain the Stop-and-Wait ARQ protocol, including how it handles corrupted and lost frames, the role of sequence numbers, and how various delays (propagation delay, transmission delay, queuing delay, processing delay) affect its performance. Additionally, describe how to calculate the total time for a complete cycle, the protocol's efficiency, and throughput.**
+### Explain the Stop-and-Wait ARQ protocol, including how it handles corrupted and lost frames, the role of sequence numbers, and how various delays affect its performance. Additionally, describe how to calculate the total time for a complete cycle, the protocol's efficiency, and throughput.
 > 
 > The Stop-and-Wait ARQ protocol is used for reliable data transmission by sending one frame at a time and waiting for an acknowledgment (ACK) before sending the next frame. It handles corrupted frames by discarding them and not sending an ACK, while lost frames are managed by retransmitting the frame if the ACK is not received within the timeout period. Sequence numbers (typically 0 and 1) help distinguish between new and retransmitted frames, ensuring proper frame order and handling duplicates.
 > 
