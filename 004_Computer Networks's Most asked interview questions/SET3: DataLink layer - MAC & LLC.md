@@ -1,4 +1,20 @@
 
+<!-- TOC_START -->
+| No. | Questions |
+| --- | --------- |
+| 1 | [What are the two sublayers of the data-link layer as defined by the IEEE?](#what-are-the-two-sublayers-of-the-data-link-layer-as-defined-by-the-ieee) |
+| 2 | [What is propagation delay and transmission delay, and how is it calculated?](#what-is-propagation-delay-and-transmission-delay-and-how-is-it-calculated) |
+| 3 | [Can you explain the different framing techniques used in data communication?](#can-you-explain-the-different-framing-techniques-used-in-data-communication) |
+| 4 | [Explain MAC layer protocols.](#explain-mac-layer-protocols) |
+| 5 | [What are the key features of random access methods?](#what-are-the-key-features-of-random-access-methods) |
+| 6 | [How does flow control and error control work in data communication?](#how-does-flow-control-and-error-control-work-in-data-communication) |
+| 7 | [Explain all Sliding Window protocols in CN.](#explain-all-sliding-window-protocols-in-cn) |
+| 8 | [Explain the Stop-and-Wait ARQ protocol, including how it handles corrupted and lost frames, the role of sequence numbers, and how various delays affect its performance. Additionally, describe how to calculate the total time for a complete cycle, the protocol's efficiency, and throughput.](#explain-the-stop-and-wait-arq-protocol-including-how-it-handles-corrupted-and-lost-frames-the-role-of-sequence-numbers-and-how-various-delays-affect-its-performance-additionally-describe-how-to-calculate-the-total-time-for-a-complete-cycle-the-protocols-efficiency-and-throughput) |
+| 9 | [Describe the Go-Back-N ARQ protocol and explain how it improves upon Stop-and-Wait ARQ. Include details on the sliding window concept, sequence numbers, acknowledgment process, and how the window size and sequence number calculation contribute to its efficiency.](#describe-the-go-back-n-arq-protocol-and-explain-how-it-improves-upon-stop-and-wait-arq-include-details-on-the-sliding-window-concept-sequence-numbers-acknowledgment-process-and-how-the-window-size-and-sequence-number-calculation-contribute-to-its-efficiency) |
+| 10 | [Explain the Selective Repeat ARQ protocol and how it differs from Go-Back-N ARQ. Discuss how it handles frame retransmissions, the management of data windows, and the role of timers in this protocol.](#explain-the-selective-repeat-arq-protocol-and-how-it-differs-from-go-back-n-arq-discuss-how-it-handles-frame-retransmissions-the-management-of-data-windows-and-the-role-of-timers-in-this-protocol) |
+| 11 | [What is Piggybacking?](#what-is-piggybacking) |
+<!-- TOC_END -->
+
 ### What are the two sublayers of the data-link layer as defined by the IEEE?
 > The IEEE has subdivided the data-link layer into two sublayers: the logical link control (LLC) sublayer and the media access control (MAC) sublayer. The LLC sublayer handles flow control, error control, and part of the framing duties, while the MAC sublayer defines the specific access method for each LAN and takes care of addressing at the LAN technology level.ensuring that multiple nodes or stations can transmit data without conflicts.
 
