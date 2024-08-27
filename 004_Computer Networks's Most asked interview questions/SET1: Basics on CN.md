@@ -60,7 +60,7 @@ Certainly! Here's the table of contents formatted as requested:
 > - **Penetration:** Radio waves can penetrate solid objects depending on frequency, microwaves require line-of-sight, and infrared waves do not penetrate solid objects.
 > - **Security:** Radio waves offer poor security due to interception risks, microwaves provide medium security, and infrared waves offer higher security by limiting interference between systems.
 
-### Give me  real-world uses of Radio, microwaves, and infrared waves.
+### Give me real-world uses of Radio, Microwaves, and Infrared Waves.
 >Here is the applications: 
 > - **Radio:** Used for long-distance communication, broadcasting (radio and television), radar, and wireless networking (Wi-Fi, Bluetooth, etc.).
 > - **Microwaves:** Microwaves are used in microwave ovens for cooking food, satellite communications, radar, wireless networking (like Wi-Fi routers operating in the 2.4 GHz and 5 GHz bands), and certain types of short-range data transmission.
